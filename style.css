@@ -1,0 +1,98 @@
+body {
+    font-family: "Rubik", "Arial", sans-serif;
+    background-image: url("background.jpg");
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+header {
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
+    min-width: 500px;
+    max-height: 370px;
+    min-height: 370px;
+    box-shadow: 0 0 50px;
+    position: absolute;
+    left: 30%;
+}
+
+.avatar {
+    height: 250px;
+    width: 250px;
+    border-color: rgb(48, 73, 58);
+    background-color: rgb(255, 255, 255);
+    border-radius: 50% 50% 50% 50%;
+    border-width: 10px;
+    border-style: solid;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+
+.name {
+    position: absolute;
+    left: 295px;
+    top: 50px;
+}
+
+.activities {
+    position: absolute;
+    left: 295px;
+    top: 100px;
+}
+
+.message {
+    position: absolute;
+    left: 19px;
+    top: 280px;
+}
+
+.input {
+    position: absolute;
+    left: 15px;
+    top: 330px;
+    height: 40px;
+    width: 450px;
+    border-radius: 10px 0px 0px 10px;
+    border: 2px solid rgb(213, 213, 213);
+    font-size: 18px;
+    font-family: "Rubik", "Arial", sans-serif;
+    resize: none;
+    outline: none;
+}
+
+.button {
+    position: absolute;
+    left: 471px;
+    top: 331px;
+    width: 50px;
+    height: 48px;
+    border-radius: 0px 10px 10px 0px;
+    border: 2px solid rgb(213, 213, 213);
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    position: fixed;
+    top: 5%;
+    left: 95%;
+    box-shadow: 0 0 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+main {
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
+    min-width: 500px;
+    box-shadow: 0 0 50px;
+    position: absolute;
+    top: 440px;
+    left: 30%;
+}
