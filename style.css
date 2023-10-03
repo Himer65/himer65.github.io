@@ -42,17 +42,19 @@ header {
 }
 
 .message {
-    position: relative;
-    left: 19px;
-    bottom: 110px;
+    position: absolute;
+    left: 4px;
+    top: 0px;
+    margin: 0px;
 }
 
 .input {
-    position: relative;
-    left: 3%;
-    bottom: 120px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
     height: 40px;
-    width: 420px;
+    width: 89%;
+    margin: 0px;
     border-radius: 10px 0px 0px 10px;
     border: 2px solid rgb(213, 213, 213);
     font-size: 18px;
@@ -61,14 +63,23 @@ header {
     outline: none;
 }
 
-.button {
-    position: relative;
-    left: 0%;
-    bottom: 130px;
+.button_submit {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
     width: 50px;
     height: 48px;
+    background-color: rgb(255, 255, 255);
     border-radius: 0px 10px 10px 0px;
     border: 2px solid rgb(213, 213, 213);
+}
+
+.input_and_button {
+    position: relative;
+    bottom: 100px;
+    left: 10px;
+    height: 80px;
+    width: 490px;
 }
 
 .links {
