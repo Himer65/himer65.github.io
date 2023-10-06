@@ -1,85 +1,26 @@
 body {
-    font-family: "Rubik", "Arial", sans-serif;
-    background-image: url("image/background.jpg");
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    
+    background-image: url(image/background.jpg);
 }
 
-header {
+.main {
     background-color: rgb(240, 240, 240);
+    box-shadow: 0 0 10px;
     border-radius: 10px;
-    height: 370px;
-    width: 70%;
-    box-shadow: 0 0 50px;
-    position: relative;
 }
 
 .avatar {
-    height: 220px;
-    width: 220px;
-    border-color: rgb(61, 62, 61);
-    background-color: rgb(255, 255, 255);
-    border-radius: 50% 50% 50% 50%;
-    border-width: 10px;
     border-style: solid;
-    position: relative;
-    left: 10px;
-    top: 10px;
-}
-
-.name {
-    position: relative;
-    left: 260px;
-    bottom: 200px;
-}
-
-.activities {
-    position: relative;
-    left: 260px;
-    bottom: 200px;
+    border-radius: 50%;
+    border-color: black;
+    border-width: 5px;
+    background-color: rgb(255, 255, 255);
 }
 
 .message {
-    position: absolute;
-    left: 4px;
-    top: 0px;
-    margin: 0px;
-}
-
-.input {
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    height: 40px;
-    width: 89%;
-    margin: 0px;
-    border-radius: 10px 0px 0px 10px;
-    border: 2px solid rgb(213, 213, 213);
-    font-size: 18px;
-    font-family: "Rubik", "Arial", sans-serif;
-    resize: none;
-    outline: none;
-}
-
-.button_submit {
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    width: 50px;
-    height: 48px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 0px 10px 10px 0px;
-    border: 2px solid rgb(213, 213, 213);
-}
-
-.input_and_button {
-    position: relative;
-    bottom: 100px;
-    left: 10px;
-    height: 80px;
-    width: 490px;
+    background-color: rgb(255 255 255);
+    border-radius: 10px;
+    border-color: rgb(213, 213, 213);
+    border-width: 2px;
 }
 
 .links {
@@ -88,17 +29,8 @@ header {
     text-decoration: none;
     position: fixed;
     top: 20px;
-    right: 20px;
+    left: 20px;
     box-shadow: 0 0 10px;
     border-radius: 10px 10px 10px 10px;
     z-index: 100;
-}
-
-main {
-    background-color: rgb(240, 240, 240);
-    border-radius: 10px;
-    width: 510px;
-    box-shadow: 0 0 50px;
-    position: relative;
-    top: 50px;
 }
