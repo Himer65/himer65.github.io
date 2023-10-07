@@ -15,11 +15,11 @@
     </head>
     <body>
         <div class="row p-2 justify-content-center">
-            <div class="col-12 col-sm-5 main">
+            <div class="col-11 col-sm-5 main">
                 <div class="row p-2 header">
-                    <img src="image/himer.png" alt="avatar" class="col-sm-4 p-0 avatar">
+                    <img class="col-sm-4 p-0 avatar" src="image/himer.png" alt="avatar">
                     <div class="col-sm-7">
-                        <h1>Нурик Мешков</h1>
+                        <h1><b>Нурик Мешков</b></h1>
                         <h2>Программист</h2>
                     </div>
                     
@@ -35,8 +35,8 @@
                 </div>
 
                 <div class="row info" id="experience">
-                    <h2 class="col-12 text-center mt-2">Мой опыт</h2>
-                    {{ message }}
+                    <h2 class="col-12 text-center mt-4"><b>Мой опыт</b></h2>
+                    <div class="exp_txt" v-html="inner"></div>
                 </div>
             </div>
         </div>

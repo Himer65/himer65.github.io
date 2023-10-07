@@ -1,6 +1,15 @@
-var app = new Vue({
+let exp = [
+  "<b>",
+  "Hellofdbndlfknbdlkfnlkbndflknbdlfkbndlfkbndflkn",
+  "HelloHellofdbndlfknbdlkfnlkbndflknbdlfkbndlfkbndflkn",
+  "Hellofdbndlfknbdlkfnlkbndflknbdlfkbndlfkbndflkn",
+  "HelloHellofdbndlfknbdlkfnlkbndflknbdlfkbndlfkbndflkn",
+  "</b>",
+]
+
+let app = new Vue({
     el: '#experience',
     data: {
-      message: 'Привет, Vue!'
+      inner: exp.join("<br></br>"),
     }
 })
