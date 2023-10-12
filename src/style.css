@@ -30,12 +30,6 @@ body {
 
 .links {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-decoration: none;
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    box-shadow: 0 0 10px;
-    border-radius: 10px 10px 10px 10px;
-    z-index: 100;
 }
