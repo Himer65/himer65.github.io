@@ -17,17 +17,6 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
-.message {
-    background-color: rgb(255 255 255);
-    border-radius: 10px;
-    border-color: rgb(213, 213, 213);
-    border-width: 2px;
-}
-
-.exp_txt {
-    line-height: 1em;
-}
-
 .links {
     display: flex;
     flex-direction: row;
