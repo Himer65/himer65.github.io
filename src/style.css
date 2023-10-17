@@ -1,24 +1,25 @@
 body {
-    background-color: rgb(230, 230, 230);
+    background-color: #ffffff;
 }
 
-.main {
-    background-color: rgb(240, 240, 240);
-    box-shadow: 0 0 10px;
-    border-radius: 10px;
+.left {
+    background-color: #d8e6ef;
+}
+
+.right {
+    background-color: #ffdf5f;
 }
 
 .avatar {
     height: fit-content;
-    border-style: solid;
     border-radius: 50%;
-    border-color: black;
-    border-width: 5px;
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
 }
 
-.links {
-    display: flex;
-    flex-direction: row;
+a {
     text-decoration: none;
+}
+
+.game {
+    background-color: #acee7f;
 }
