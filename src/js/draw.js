@@ -7,8 +7,8 @@ const drawSquare = function (x, y, width, height, color) {
  
 const drawCell = function () {
     let color;
-    for (let x = 0; x < 320; x += 40) {
-        for (let y = 0; y < 320; y += 40) {
+    for (let x = 0; x != 320; x += 40) {
+        for (let y = 0; y != 320; y += 40) {
             if ((x / 40 + y / 40) % 2) {
                 color = "#686868";
             } else {
@@ -99,6 +99,8 @@ const drawTower = function (x, y, color) {
 }
 
 const drawStart = function () {
+    drawCell();
+
     let pawnBlackXY = [
         {x: 0, y: 40},
         {x: 40, y: 40},
@@ -137,4 +139,62 @@ const drawStart = function () {
     drawHorse(40, 280, "white"); drawHorse(240, 280, "white");
     drawTower(0, 0, "black"); drawTower(280, 0, "black");
     drawTower(0, 280, "white"); drawTower(280, 280, "white");
+
+    // Первая буква название фигуры, вторая цвет фигуры, третья тень на ячейке.
+    let part = {
+      0: {  0: "TB-",  40: "HB-",  80: "RB-", 120: "QB-", 160: "KB-", 200: "RB-", 240: "HB-", 280: "TB-"},
+     40: {  0: "PB-",  40: "PB-",  80: "PB-", 120: "PB-", 160: "PB-", 200: "PB-", 240: "PB-", 280: "PB-"},
+     80: {  0: "NN-",  40: "NN-",  80: "NN-", 120: "NN-", 160: "NN-", 200: "NN-", 240: "NN-", 280: "NN-"},
+    120: {  0: "NN-",  40: "NN-",  80: "NN-", 120: "NN-", 160: "NN-", 200: "NN-", 240: "NN-", 280: "NN-"},
+    160: {  0: "NN-",  40: "NN-",  80: "NN-", 120: "NN-", 160: "NN-", 200: "NN-", 240: "NN-", 280: "NN-"},
+    200: {  0: "NN-",  40: "NN-",  80: "NN-", 120: "NN-", 160: "NN-", 200: "NN-", 240: "NN-", 280: "NN-"},
+    240: {  0: "PW-",  40: "PW-",  80: "PW-", 120: "PW-", 160: "PW-", 200: "PW-", 240: "PW-", 280: "PW-"},
+    280: {  0: "TW-",  40: "HW-",  80: "RW-", 120: "QW-", 160: "KW-", 200: "RW-", 240: "HW-", 280: "TW-"},
+    }
+
+    return part;
+}
+
+const drawPart = function (part) {
+    drawCell();
+    let figure, color;
+
+    for (let x = 0; x != 320; x += 40) {
+        for (let y = 0; y != 320; y += 40) {
+            figure = part[y][x];
+
+            if (figure[1] === "B") {
+                color = "black";
+            } else {
+                color = "white";
+            }
+
+            switch (figure[0]) {
+                case "P":
+                    if (y === 0) {
+                        drawQueen(x, y, color); 
+                        part[y][x] = "Q" + part[y][x][1] + part[y][x][2]
+                        break;
+                    }
+                    drawPawn(x, y, color); break;
+                case "T":
+                    drawTower(x, y, color); break;
+                case "H":
+                    drawHorse(x, y, color); break;
+                case "R":
+                    drawRook(x, y, color); break;
+                case "Q":
+                    drawQueen(x, y, color); break;
+                case "K":
+                    drawKing(x, y, color); break;
+            }
+
+            switch (figure[2]) {
+                case "G":
+                    drawSquare(x, y, 40, 40, "#00ff37a8");
+                case "R":
+                    drawSquare(x, y, 40, 40, "#6e000090")
+            }
+        }
+    }
 }

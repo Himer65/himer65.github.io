@@ -23,3 +23,9 @@ a {
 .game {
     background-color: #acee7f;
 }
+
+#repit {
+    border-radius: 5px;
+    background-color: #ffffff;
+    border-color: #cecece;
+}
