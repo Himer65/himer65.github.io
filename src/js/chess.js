@@ -13,16 +13,14 @@ board.onclick = function (event) {
     if (move && (x != goesX || y != goesY)) {
         if (rightMoves(goesX, goesY, part)
             .findIndex(
-                (e) => e.x === x && e.y == y
+                (e) => (e.x === x) && (e.y == y)
             ) != -1 ) {
             part[y][x] = part[goesY][goesX]
             part[goesY][goesX] = "NN-";
         }
 
         move = false;
-    } else if (!move && (x === goesX && y === goesY)) { 
-        move = true;
-    } else if (!move && part[y][x][0] != "N") {
+    } else if (!move && part[y][x][1] === "W") {
         move = true;
         goesX = x;
         goesY = y;
