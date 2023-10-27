@@ -18,10 +18,13 @@ body {
 
 a {
     text-decoration: none;
+    margin: 5px;
 }
 
 .game {
     background-color: #acee7f;
+    display: grid;
+    place-items: center;
 }
 
 #repit {
