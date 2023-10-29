@@ -3,7 +3,7 @@ let bollX = Math.floor(Math.random() * 30); let XP = 0;
 let bollY = 0; let YP = 0;
 
 
-const neuron_animation = function () {
+const boll_animation = function () {
     if (bollX === 0 || bollX === 30 ||
         bollY === 0 || bollY === 280) {
         if (Math.random() > 0.5) {
@@ -22,29 +22,27 @@ const neuron_animation = function () {
     bollX = Math.max(Math.min(bollX + XP, 30), 0);
     bollY = Math.max(Math.min(bollY + YP, 280), 0);
     boll.style = `top: ${bollX}px; left: ${bollY}px`;
-}
+};
+setInterval(boll_animation, 15);
 
 
-let noise = document.querySelector("#noise");
-let ctx = noise.getContext("2d");
-let color;
+let canvas = document.querySelector("#noise");
+let ctx = canvas.getContext("2d");
+let imageData = ctx.createImageData(ctx.canvas.width, ctx.canvas.height);
 
-const game_animation = function () {
-    for (let x = 0; x < 300; x += 2) {
-        for (let y = 0; y < 50; x += 2) {
-            ctx.beginPath();
-            ctx.rect(y, x, 2, 2);
-            ctx.fillStyle = "#FF0000f0";
-            ctx.fill();
-            ctx.closePath();
-        }
+const noise_animation = function () {
+    for (let i = 0; i < imageData.data.length; i += 4) {
+        color = Math.random() * 255;
+        imageData.data[i]     = color;
+        imageData.data[i + 1] = color;
+        imageData.data[i + 2] = color;
+        imageData.data[i + 3] = 255;
     }
-    
-    
+    ctx.putImageData(imageData, 0, 0);
 }
+setInterval(noise_animation, 30);
 
 
-setInterval(neuron_animation, 15);
-//setInterval(game_animation, 1000)
+
 	
 	

@@ -1,0 +1,30 @@
+<canvas>DEAD NOISE</canvas>
+<style>
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>
+<script>
+let canvas = document.querySelector("canvas");
+let ctx = canvas.getContext("2d");
+ctx.canvas.height = canvas.offsetHeight;
+ctx.canvas.width  = canvas.offsetWidth;
+let imageData = ctx.createImageData(ctx.canvas.width, ctx.canvas.height);
+
+function render() {
+    for (let i = 0; i < imageData.data.length; i += 4) {
+        color = Math.random() * 255;
+        imageData.data[i]     = color;
+        imageData.data[i + 1] = color;
+        imageData.data[i + 2] = color;
+        imageData.data[i + 3] = 255;
+    }   
+    ctx.putImageData(imageData, 0, 0);
+    requestAnimationFrame(render);
+};
+requestAnimationFrame(render);
+</script>

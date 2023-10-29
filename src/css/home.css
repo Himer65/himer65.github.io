@@ -27,7 +27,7 @@ a {
     position: absolute;
 }
 
-.web {
+#web {
     background-color: rgb(255, 0, 51);
     box-shadow: 0 -150px 70px -120px rgb(0, 177, 177) inset,
                 0 -220px 70px -120px rgb(168, 226, 51) inset,
