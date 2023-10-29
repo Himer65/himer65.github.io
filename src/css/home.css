@@ -25,6 +25,7 @@ a {
     border-radius: 50%;
     background-color: rgb(91, 253, 126);
     position: absolute;
+    z-index: 1000;
 }
 
 #web {

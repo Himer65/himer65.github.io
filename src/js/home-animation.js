@@ -1,33 +1,25 @@
 let boll = document.querySelector("#neuron").querySelector(".boll");
-let bollX = Math.floor(Math.random() * 30); let XP = 0;
-let bollY = 0; let YP = 0;
+let bollX = Math.floor(Math.random() *  30); let XP = Math.random() * 4 - 2;
+let bollY = Math.floor(Math.random() * 280); let YP = Math.random() * 4 - 2;
 
 
 const boll_animation = function () {
-    if (bollX === 0 || bollX === 30 ||
-        bollY === 0 || bollY === 280) {
-        if (Math.random() > 0.5) {
-            XP = 1;
-        } else {
-            XP = -1;
-        }
-
-        if (Math.random() > 0.5) {
-            YP = 1;
-        } else {
-            YP = -1;
-        }
+    if (bollX <= 0 || bollX >= 30 ||
+        bollY <= 0 || bollY >= 280) {
+        XP = Math.random() * 4 - 2;
+        YP = Math.random() * 4 - 2;
     }
     
-    bollX = Math.max(Math.min(bollX + XP, 30), 0);
-    bollY = Math.max(Math.min(bollY + YP, 280), 0);
-    boll.style = `top: ${bollX}px; left: ${bollY}px`;
+    bollX += XP; bollY += YP;
+    boll.style = `top: ${Math.floor( bollX )}px; left: ${Math.floor( bollY )}px`;
 };
 setInterval(boll_animation, 15);
 
 
 let canvas = document.querySelector("#noise");
 let ctx = canvas.getContext("2d");
+ctx.canvas.width  = canvas.offsetWidth;
+ctx.canvas.height = canvas.offsetHeight;
 let imageData = ctx.createImageData(ctx.canvas.width, ctx.canvas.height);
 
 const noise_animation = function () {

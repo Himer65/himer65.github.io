@@ -1,4 +1,5 @@
-<canvas>DEAD NOISE</canvas>
+<canvas></canvas>
+
 <style>
 canvas {
     position: fixed;
@@ -6,25 +7,59 @@ canvas {
     left: 0;
     width: 100%;
     height: 100%;
+    background-color: rgb(240, 240, 240);
 }
 </style>
-<script>
-let canvas = document.querySelector("canvas");
-let ctx = canvas.getContext("2d");
-ctx.canvas.height = canvas.offsetHeight;
-ctx.canvas.width  = canvas.offsetWidth;
-let imageData = ctx.createImageData(ctx.canvas.width, ctx.canvas.height);
 
-function render() {
-    for (let i = 0; i < imageData.data.length; i += 4) {
-        color = Math.random() * 255;
-        imageData.data[i]     = color;
-        imageData.data[i + 1] = color;
-        imageData.data[i + 2] = color;
-        imageData.data[i + 3] = 255;
-    }   
-    ctx.putImageData(imageData, 0, 0);
-    requestAnimationFrame(render);
-};
-requestAnimationFrame(render);
+<script>
+alert("Нажми на экран что бы заспавнить мячик");
+
+let board = document.querySelector("canvas");
+let ctx = board.getContext("2d");
+ctx.canvas.width  = board.offsetWidth;
+ctx.canvas.height = board.offsetHeight;
+let bolls = [];
+let g = 9.8;
+
+board.addEventListener("click", (e) => {
+    let boll = {
+        x: e.offsetX,
+        y: e.offsetY,
+        R: Math.random() * 50 + 5,
+        color: "#" + (Math.random() * 0x1000000 | 0x1000000).toString(16).slice(1),
+        speed: 0,
+    }
+
+    bolls.push(boll);
+});
+
+const drawBolls = function () {
+    ctx.clearRect(0, 0, board.width, board.height);
+
+    for (let boll of bolls) {
+        if (boll.y + boll.R >= board.height ||
+            boll.y - boll.R <= 0) {
+            Object.defineProperty(boll, "speed", {
+                value: -boll.speed,
+            });
+            Object.defineProperty(boll, "speed", {
+                value: boll.speed - g / 100,
+            });
+        }
+
+        Object.defineProperty(boll, "speed", {
+            value: boll.speed + g / 100,
+        });
+        Object.defineProperty(boll, "y", {
+            value: boll.y + boll.speed,
+        });
+
+        ctx.beginPath();
+        ctx.fillStyle = boll.color;
+        ctx.arc(boll.x, boll.y, boll.R, 0, 360);
+        ctx.fill();
+    }
+}
+
+setInterval(drawBolls, 10);
 </script>
