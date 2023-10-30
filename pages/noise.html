@@ -1,4 +1,5 @@
-<canvas></canvas>
+<canvas inner></canvas>
+<div>Нажми на экран что бы заспавнить мячик.</div>
 
 <style>
 canvas {
@@ -9,25 +10,40 @@ canvas {
     height: 100%;
     background-color: rgb(240, 240, 240);
 }
+
+div {
+    padding: 5px;
+    text-align: center;
+    height: 50px;
+    width: 250px;
+    background-color: aquamarine;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.199);
+    position: fixed;
+    top: 25px;
+    left: 25px;
+}
 </style>
 
 <script>
-alert("Нажми на экран что бы заспавнить мячик");
-
 let board = document.querySelector("canvas");
 let ctx = board.getContext("2d");
 ctx.canvas.width  = board.offsetWidth;
 ctx.canvas.height = board.offsetHeight;
 let bolls = [];
 let g = 9.8;
+let fps = 50;
 
 board.addEventListener("click", (e) => {
+    document.querySelector("div").style.opacity = "0";
+
     let boll = {
         x: e.offsetX,
         y: e.offsetY,
+        speedX: Math.random() * 10 - 5,
+        speedY: Math.random() * 10 - 5,
         R: Math.random() * 50 + 5,
         color: "#" + (Math.random() * 0x1000000 | 0x1000000).toString(16).slice(1),
-        speed: 0,
     }
 
     bolls.push(boll);
@@ -37,22 +53,34 @@ const drawBolls = function () {
     ctx.clearRect(0, 0, board.width, board.height);
 
     for (let boll of bolls) {
-        if (boll.y + boll.R >= board.height ||
-            boll.y - boll.R <= 0) {
-            Object.defineProperty(boll, "speed", {
-                value: -boll.speed,
-            });
-            Object.defineProperty(boll, "speed", {
-                value: boll.speed - g / 100,
-            });
+        for (let boll2 of bolls) {
+            if (boll === boll2) continue;
+
+            if (((boll.x - boll2.x) ** 2 + (boll.y - boll2.y) ** 2) ** 0.5 - boll.R - boll2.R <= 0) {
+                boll.speedX  *= -1;
+                boll.speedY  *= -1;
+                boll2.speedX *= -1;
+                boll2.speedY *= -1;
+
+                while (((boll.x - boll2.x) ** 2 + (boll.y - boll2.y) ** 2) ** 0.5 - boll.R - boll2.R <= 0) {
+                    boll.x += boll.speedX;
+                    boll.y += boll.speedY;
+
+                    ctx.beginPath();
+                    ctx.fillStyle = boll.color;
+                    ctx.arc(boll.x, boll.y, 5, 0, 360);
+                    ctx.fill();
+                }
+            } 
         }
 
-        Object.defineProperty(boll, "speed", {
-            value: boll.speed + g / 100,
-        });
-        Object.defineProperty(boll, "y", {
-            value: boll.y + boll.speed,
-        });
+        if (boll.y + boll.R >= board.height) boll.speedY = -Math.abs(boll.speedY) - g / fps;
+        else if (boll.y - boll.R <= 0) boll.speedY = Math.abs(boll.speedY) + g / fps;
+        else if (boll.x + boll.R >= board.width) boll.speedX = -Math.abs(boll.speedX);
+        else if (boll.x - boll.R <= 0) boll.speedX = Math.abs(boll.speedX);
+
+        boll.speedY += g / fps;
+        boll.x += boll.speedX; boll.y += boll.speedY;
 
         ctx.beginPath();
         ctx.fillStyle = boll.color;
@@ -61,5 +89,5 @@ const drawBolls = function () {
     }
 }
 
-setInterval(drawBolls, 10);
+setInterval(drawBolls, 1000 / fps);
 </script>
