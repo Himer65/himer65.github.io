@@ -31,11 +31,12 @@ let ctx = board.getContext("2d");
 ctx.canvas.width  = board.offsetWidth;
 ctx.canvas.height = board.offsetHeight;
 let bolls = [];
-let g = 9.8;
+let gx = 9.8;
+let gy = 9.8;
 let fps = 50;
 
 board.addEventListener("click", (e) => {
-    document.querySelector("div").style.opacity = "0";
+    document.querySelector("div").style.zIndex = "-1";
 
     let boll = {
         x: e.offsetX,
@@ -53,33 +54,13 @@ const drawBolls = function () {
     ctx.clearRect(0, 0, board.width, board.height);
 
     for (let boll of bolls) {
-        for (let boll2 of bolls) {
-            if (boll === boll2) continue;
-
-            if (((boll.x - boll2.x) ** 2 + (boll.y - boll2.y) ** 2) ** 0.5 - boll.R - boll2.R <= 0) {
-                boll.speedX  *= -1;
-                boll.speedY  *= -1;
-                boll2.speedX *= -1;
-                boll2.speedY *= -1;
-
-                while (((boll.x - boll2.x) ** 2 + (boll.y - boll2.y) ** 2) ** 0.5 - boll.R - boll2.R <= 0) {
-                    boll.x += boll.speedX;
-                    boll.y += boll.speedY;
-
-                    ctx.beginPath();
-                    ctx.fillStyle = boll.color;
-                    ctx.arc(boll.x, boll.y, 5, 0, 360);
-                    ctx.fill();
-                }
-            } 
-        }
-
-        if (boll.y + boll.R >= board.height) boll.speedY = -Math.abs(boll.speedY) - g / fps;
-        else if (boll.y - boll.R <= 0) boll.speedY = Math.abs(boll.speedY) + g / fps;
+        if (boll.y + boll.R >= board.height) boll.speedY = -Math.abs(boll.speedY);
+        else if (boll.y - boll.R <= 0) boll.speedY = Math.abs(boll.speedY);
         else if (boll.x + boll.R >= board.width) boll.speedX = -Math.abs(boll.speedX);
         else if (boll.x - boll.R <= 0) boll.speedX = Math.abs(boll.speedX);
 
-        boll.speedY += g / fps;
+        boll.speedY += gy / fps;
+        boll.speedX += gx / fps;
         boll.x += boll.speedX; boll.y += boll.speedY;
 
         ctx.beginPath();
@@ -90,4 +71,10 @@ const drawBolls = function () {
 }
 
 setInterval(drawBolls, 1000 / fps);
+
+setInterval(() => {
+    gx = (Math.random() * 20 - 10) * 0.5 + gx * 0.5;
+    gy = (Math.random() * 20 - 10) * 0.5 + gy * 0.5;
+    console.log(gx, gy)
+}, 10_000);
 </script>
