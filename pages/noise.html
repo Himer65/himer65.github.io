@@ -31,8 +31,8 @@ let ctx = board.getContext("2d");
 ctx.canvas.width  = board.offsetWidth;
 ctx.canvas.height = board.offsetHeight;
 let bolls = [];
-let gx = 9.8;
-let gy = 9.8;
+let gx = Math.random() * 20 - 10;
+let gy = Math.random() * 20 - 10;
 let fps = 50;
 
 board.addEventListener("click", (e) => {
@@ -52,6 +52,13 @@ board.addEventListener("click", (e) => {
 
 const drawBolls = function () {
     ctx.clearRect(0, 0, board.width, board.height);
+    
+    ctx.beginPath();
+    ctx.lineWidth = 7;
+    ctx.moveTo(board.width / 2, board.height / 2);
+    ctx.lineTo(gx * 10 + board.width / 2, gy * 10 + board.height / 2);
+    ctx.closePath();
+    ctx.stroke();
 
     for (let boll of bolls) {
         if (boll.y + boll.R >= board.height) boll.speedY = -Math.abs(boll.speedY);
@@ -59,22 +66,17 @@ const drawBolls = function () {
         else if (boll.x + boll.R >= board.width) boll.speedX = -Math.abs(boll.speedX);
         else if (boll.x - boll.R <= 0) boll.speedX = Math.abs(boll.speedX);
 
-        boll.speedY += gy / fps;
-        boll.speedX += gx / fps;
+        boll.speedY = (boll.speedY + gy / fps) * 0.9999;
+        boll.speedX = (boll.speedX + gx / fps) * 0.9999;
         boll.x += boll.speedX; boll.y += boll.speedY;
 
         ctx.beginPath();
         ctx.fillStyle = boll.color;
         ctx.arc(boll.x, boll.y, boll.R, 0, 360);
         ctx.fill();
+        ctx.closePath();
     }
 }
 
 setInterval(drawBolls, 1000 / fps);
-
-setInterval(() => {
-    gx = (Math.random() * 20 - 10) * 0.5 + gx * 0.5;
-    gy = (Math.random() * 20 - 10) * 0.5 + gy * 0.5;
-    console.log(gx, gy)
-}, 10_000);
 </script>
