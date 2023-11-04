@@ -66,8 +66,8 @@ const drawBolls = function () {
         else if (boll.x + boll.R >= board.width) boll.speedX = -Math.abs(boll.speedX);
         else if (boll.x - boll.R <= 0) boll.speedX = Math.abs(boll.speedX);
 
-        boll.speedY = (boll.speedY + gy / fps) * 0.9999;
-        boll.speedX = (boll.speedX + gx / fps) * 0.9999;
+        boll.speedY = (boll.speedY + gy / fps);
+        boll.speedX = (boll.speedX + gx / fps);
         boll.x += boll.speedX; boll.y += boll.speedY;
 
         ctx.beginPath();
