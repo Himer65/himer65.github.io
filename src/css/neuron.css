@@ -26,9 +26,3 @@ a {
     display: grid;
     place-items: center;
 }
-
-#repit {
-    border-radius: 10px;
-    background-color: #ffffff;
-    border-color: #cecece;
-}
