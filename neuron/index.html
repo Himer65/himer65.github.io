@@ -43,7 +43,7 @@
         </a>
     </div>
     <div class="col-12 col-lg-7 p-3 game">
-        <button id="repit" type="button" class="btn btn-primary">Заново</button>
+        <button onclick="buttonRepit()" type="button" class="btn btn-primary">Заново</button>
         <h6>Искуственный Интелект</h6>
         <div id="board" style="width: 400px;"></div>
         <h6>Ты</h6>
@@ -54,9 +54,11 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script>
     <!-- Подключение скриптов библеотеки шахматной доски -->
     <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js" integrity="sha384-8Vi8VHwn3vjQ9eUHUxex3JSN/NFqUg3QbPyX8kWyb93+8AC/pPWTzj+nHtbC5bxD" crossorigin="anonymous"></script>
+    <!-- Подключение библеотеки шахматной логики -->
+    <script src="js/chess.js"></script>
     <!-- Подключение скрипта для отображения шахматной доски -->
-    <script src="board.js"></script>
+    <script src="js/board.js"></script>
     <!-- Подключение бота -->
-    <script src="bot.js"></script>
+    <script src="js/bot.js"></script>
 </body>
 </html>
