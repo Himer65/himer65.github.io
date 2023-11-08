@@ -4,6 +4,9 @@ const onDragStart = function(source, piece, position, orientation) {
     }
     
     if (game.game_over()) {
+        if (game.turn() === "b") alert("Вы выйграли!");
+        else alert("Вы проиграли!");
+        buttonRepit();
         return false;
     }
     
@@ -52,7 +55,7 @@ const MoveBot = function() {
     console.log("bot: ", max);
     game.load(max_fen);
     board.position(game.fen());
-}
+};
 
 function buttonRepit() {
     game.load("rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1");
