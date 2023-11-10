@@ -1,4 +1,11 @@
 const onDragStart = function(source, piece, position, orientation) {
+    if (game.game_over()) {
+        if (game.turn() === "b") alert("Вы выйграли!");
+        else alert("Вы проиграли!");
+        buttonRepit();
+        return false;
+    }
+
     if (piece[0] === "b") {
         return false;
     }
@@ -22,13 +29,6 @@ const onDrop = function(source, target) {
 };
 
 const onSnapEnd = function() {
-    if (game.game_over()) {
-        if (game.turn() === "b") alert("Вы выйграли!");
-        else alert("Вы проиграли!");
-        buttonRepit();
-        return;
-    }
-
     board.position(game.fen());
     console.log("you: ", Bot(game.fen()));
     MoveBot();
@@ -43,17 +43,22 @@ const MoveBot = function() {
     for (let moveBlack of game.moves()) {
         game.move(moveBlack);
         save2 = game.fen();
+        let max = -2;
 
         for (let moveWhite of game.moves()) {
             game.move(moveWhite);
             let predWhite = Bot(game.fen());
 
-            if (predWhite < min) {
-                min = predWhite;
-                moveBot = save2;
+            if (predWhite > max) {
+                max = predWhite;
             }
 
             game.load(save2);
+        }
+
+        if (max < min) {
+            min = max;
+            moveBot = save2;
         }
 
         game.load(save1);
@@ -74,6 +79,8 @@ let config = {
     pieceTheme: "chess/{piece}.png",
     position: "start",
     draggable: true,
+    orientation: "white",
+    showErrors: "alert",
     onDragStart: onDragStart,
     onDrop: onDrop,
     onSnapEnd: onSnapEnd,
