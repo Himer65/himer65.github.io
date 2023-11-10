@@ -35,25 +35,33 @@ const onSnapEnd = function() {
 };
 
 const MoveBot = function() {
-    let save = game.fen();
-    let max  = -2;
-    let max_fen;
+    let save1 = game.fen();
+    let save2 = game.fen();
+    let min = 2;
+    let moveBot = game.moves()[0];
 
-    for (let move of game.moves()) {
-        game.move(move);
-        let pred = Bot(game.fen());
+    for (let moveBlack of game.moves()) {
+        game.move(moveBlack);
+        save2 = game.fen();
 
-        if (pred > max) {
-            max = pred;
-            max_fen = game.fen();
+        for (let moveWhite of game.moves()) {
+            game.move(moveWhite);
+            let predWhite = Bot(game.fen());
+
+            if (predWhite < min) {
+                min = predWhite;
+                moveBot = save2;
+            }
+
+            game.load(save2);
         }
 
-        game.load(save);
+        game.load(save1);
     }
 
-    console.log("bot: ", max);
-    game.load(max_fen);
+    game.load(moveBot);
     board.position(game.fen());
+    console.log("bot: ", Bot(game.fen()));
 };
 
 function buttonRepit() {
