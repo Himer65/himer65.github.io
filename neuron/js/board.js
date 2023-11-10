@@ -3,13 +3,6 @@ const onDragStart = function(source, piece, position, orientation) {
         return false;
     }
     
-    if (game.game_over()) {
-        if (game.turn() === "b") alert("Вы выйграли!");
-        else alert("Вы проиграли!");
-        buttonRepit();
-        return false;
-    }
-    
     if ((game.turn() === "w" && piece.search(/^b/) !== -1) ||
         (game.turn() === "b" && piece.search(/^w/) !== -1)) {
         return false;
@@ -29,16 +22,22 @@ const onDrop = function(source, target) {
 };
 
 const onSnapEnd = function() {
-    board.position(game.fen());
+    if (game.game_over()) {
+        if (game.turn() === "b") alert("Вы выйграли!");
+        else alert("Вы проиграли!");
+        buttonRepit();
+        return;
+    }
 
+    board.position(game.fen());
     console.log("you: ", Bot(game.fen()));
     MoveBot();
 };
 
 const MoveBot = function() {
-    let save = game.fen(),
-        max  = -2,
-        max_fen;
+    let save = game.fen();
+    let max  = -2;
+    let max_fen;
 
     for (let move of game.moves()) {
         game.move(move);
