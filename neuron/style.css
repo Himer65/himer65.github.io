@@ -26,3 +26,9 @@ a {
     display: grid;
     place-items: center;
 }
+
+#board {
+    width: 50%;
+    max-width: 500px;
+    min-width: 300px;
+}
