@@ -30,11 +30,12 @@ const onDrop = function(source, target) {
 
 const onSnapEnd = function() {
     board.position(game.fen());
-    console.log("you: ", Bot(game.fen()));
     MoveBot();
 };
 
-const MoveBot = function() {
+const MoveBot = async function() {
+    console.log("you: ", await Bot(game.fen()));
+
     let save1 = game.fen();
     let save2 = game.fen();
     let min = 2;
@@ -47,7 +48,7 @@ const MoveBot = function() {
 
         for (let moveWhite of game.moves()) {
             game.move(moveWhite);
-            let predWhite = Bot(game.fen());
+            let predWhite = await Bot(game.fen());
 
             if (predWhite > max) {
                 max = predWhite;
@@ -66,7 +67,7 @@ const MoveBot = function() {
 
     game.load(moveBot);
     board.position(game.fen());
-    console.log("bot: ", Bot(game.fen()));
+    console.log("bot: ", await Bot(game.fen()));
 };
 
 function buttonRepit() {
