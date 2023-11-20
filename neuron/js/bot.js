@@ -33,7 +33,7 @@ let _cache = {};
 
 const Bot = async function(fen) {
     let [part1, part2] = fen.split(" ").slice(0, 2);
-    fen = part1 + " " + part2;
+    fen = part1 + part2;
 
     if (Object.keys(_cache).includes(fen)) {
         return _cache[fen];
