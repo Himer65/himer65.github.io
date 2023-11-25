@@ -8,7 +8,7 @@ a {
     color: rgb(0, 0, 0);
 }
 
-.pages {
+.widget {
     text-align: center;
     width: 300px;
     height: 50px;
@@ -26,21 +26,4 @@ a {
     background-color: rgb(91, 253, 126);
     position: absolute;
     z-index: 1000;
-}
-
-#web {
-    background-color: rgb(255, 0, 51);
-    box-shadow: 0 -150px 70px -120px rgb(0, 177, 177) inset,
-                0 -220px 70px -120px rgb(168, 226, 51) inset,
-                0 -280px 70px -120px rgb(255, 223, 45) inset;
-    animation: background 4s infinite alternate;
-}
-  
-@keyframes background {
-    50% {
-      background-color: darkviolet;
-      box-shadow: 0 -140px 70px -120px rgb(172, 72, 197) inset,
-                  0 -210px 70px -120px rgb(54, 177, 177) inset,
-                  0 -280px 70px -120px rgb(214, 108, 214) inset;
-    }
 }
