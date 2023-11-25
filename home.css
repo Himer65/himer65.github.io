@@ -44,12 +44,3 @@ a {
                   0 -280px 70px -120px rgb(214, 108, 214) inset;
     }
 }
-
-#noise {
-    width: 300px;
-    height: 50px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    border-radius: 10px;
-}
