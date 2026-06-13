@@ -1,6 +1,7 @@
 body {
     display: grid;
     place-items: center;
+    padding-top: 10%;
 }
 
 a {
@@ -17,6 +18,7 @@ a {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: relative;
+    line-height: 50px;
 }
 
 .boll {
@@ -25,5 +27,5 @@ a {
     border-radius: 50%;
     background-color: rgb(91, 253, 126);
     position: absolute;
-    z-index: 1000;
+    z-index: 0;
 }
