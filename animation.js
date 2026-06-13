@@ -1,4 +1,3 @@
-// neuron widget
 let boll = document.querySelector(".boll");
 
 const winH = window.innerHeight - 30

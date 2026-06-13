@@ -1,5 +1,6 @@
 body {
     background-color: #ffffff;
+    font-family: 'Rubik', sans-serif;
 }
 
 .left {
@@ -19,16 +20,4 @@ body {
 a {
     text-decoration: none;
     margin: 5px;
-}
-
-.game {
-    background-color: #acee7f;
-    display: grid;
-    place-items: center;
-}
-
-#board {
-    width: 50%;
-    max-width: 500px;
-    min-width: 300px;
 }

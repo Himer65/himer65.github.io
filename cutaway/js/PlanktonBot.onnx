@@ -1,741 +1,0 @@
-pytorch2.1.0:ÕÒ
-ß
-Input
-onnx::MatMul_21/fc/fc.0/MatMul_output_0/fc/fc.0/MatMul"MatMul2Ÿ/usr/local/lib/python3.10/dist-packages/torch/nn/modules/linear.py(114): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1508): _slow_forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/container.py(215): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1508): _slow_forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-<ipython-input-6-ad9e0534febf>(12): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1508): _slow_forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-/usr/local/lib/python3.10/dist-packages/torch/jit/_trace.py(124): wrapper
-/usr/local/lib/python3.10/dist-packages/torch/jit/_trace.py(133): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-/usr/local/lib/python3.10/dist-packages/torch/jit/_trace.py(1285): _get_trace_graph
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(915): _trace_and_get_graph_from_model
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(1011): _create_jit_graph
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(1135): _model_to_graph
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(1596): _export
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(516): export
-<ipython-input-12-fb096e134290>(5): <cell line: 5>
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3553): run_code
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3473): run_ast_nodes
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3257): run_cell_async
-/usr/local/lib/python3.10/dist-packages/IPython/core/async_helpers.py(78): _pseudo_sync_runner
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3030): _run_cell
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(2975): run_cell
-/usr/local/lib/python3.10/dist-packages/ipykernel/zmqshell.py(539): run_cell
-/usr/local/lib/python3.10/dist-packages/ipykernel/ipkernel.py(302): do_execute
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(234): wrapper
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py(539): execute_request
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(234): wrapper
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py(261): dispatch_shell
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(234): wrapper
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py(361): process_one
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(786): run
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(825): inner
-/usr/local/lib/python3.10/dist-packages/tornado/ioloop.py(738): _run_callback
-/usr/local/lib/python3.10/dist-packages/tornado/ioloop.py(685): <lambda>
-/usr/lib/python3.10/asyncio/events.py(80): _run
-/usr/lib/python3.10/asyncio/base_events.py(1909): _run_once
-/usr/lib/python3.10/asyncio/base_events.py(603): run_forever
-/usr/local/lib/python3.10/dist-packages/tornado/platform/asyncio.py(195): start
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelapp.py(619): start
-/usr/local/lib/python3.10/dist-packages/traitlets/config/application.py(992): launch_instance
-/usr/local/lib/python3.10/dist-packages/colab_kernel_launcher.py(37): <module>
-/usr/lib/python3.10/runpy.py(86): _run_code
-/usr/lib/python3.10/runpy.py(196): _run_module_as_main
-
-Ú
-/fc/fc.0/MatMul_output_0/fc/fc.1/Relu_output_0/fc/fc.1/Relu"Relu2®/usr/local/lib/python3.10/dist-packages/torch/nn/functional.py(1471): relu
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/activation.py(101): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1508): _slow_forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/container.py(215): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1508): _slow_forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-<ipython-input-6-ad9e0534febf>(12): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1508): _slow_forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-/usr/local/lib/python3.10/dist-packages/torch/jit/_trace.py(124): wrapper
-/usr/local/lib/python3.10/dist-packages/torch/jit/_trace.py(133): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-/usr/local/lib/python3.10/dist-packages/torch/jit/_trace.py(1285): _get_trace_graph
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(915): _trace_and_get_graph_from_model
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(1011): _create_jit_graph
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(1135): _model_to_graph
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(1596): _export
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(516): export
-<ipython-input-12-fb096e134290>(5): <cell line: 5>
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3553): run_code
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3473): run_ast_nodes
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3257): run_cell_async
-/usr/local/lib/python3.10/dist-packages/IPython/core/async_helpers.py(78): _pseudo_sync_runner
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3030): _run_cell
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(2975): run_cell
-/usr/local/lib/python3.10/dist-packages/ipykernel/zmqshell.py(539): run_cell
-/usr/local/lib/python3.10/dist-packages/ipykernel/ipkernel.py(302): do_execute
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(234): wrapper
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py(539): execute_request
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(234): wrapper
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py(261): dispatch_shell
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(234): wrapper
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py(361): process_one
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(786): run
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(825): inner
-/usr/local/lib/python3.10/dist-packages/tornado/ioloop.py(738): _run_callback
-/usr/local/lib/python3.10/dist-packages/tornado/ioloop.py(685): <lambda>
-/usr/lib/python3.10/asyncio/events.py(80): _run
-/usr/lib/python3.10/asyncio/base_events.py(1909): _run_once
-/usr/lib/python3.10/asyncio/base_events.py(603): run_forever
-/usr/local/lib/python3.10/dist-packages/tornado/platform/asyncio.py(195): start
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelapp.py(619): start
-/usr/local/lib/python3.10/dist-packages/traitlets/config/application.py(992): launch_instance
-/usr/local/lib/python3.10/dist-packages/colab_kernel_launcher.py(37): <module>
-/usr/lib/python3.10/runpy.py(86): _run_code
-/usr/lib/python3.10/runpy.py(196): _run_module_as_main
-
-∏
-/fc/fc.1/Relu_output_0
-onnx::MatMul_22/fc/fc.2/MatMul_output_0/fc/fc.2/MatMul"MatMul2Ÿ/usr/local/lib/python3.10/dist-packages/torch/nn/modules/linear.py(114): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1508): _slow_forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/container.py(215): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1508): _slow_forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-<ipython-input-6-ad9e0534febf>(12): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1508): _slow_forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-/usr/local/lib/python3.10/dist-packages/torch/jit/_trace.py(124): wrapper
-/usr/local/lib/python3.10/dist-packages/torch/jit/_trace.py(133): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-/usr/local/lib/python3.10/dist-packages/torch/jit/_trace.py(1285): _get_trace_graph
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(915): _trace_and_get_graph_from_model
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(1011): _create_jit_graph
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(1135): _model_to_graph
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(1596): _export
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(516): export
-<ipython-input-12-fb096e134290>(5): <cell line: 5>
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3553): run_code
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3473): run_ast_nodes
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3257): run_cell_async
-/usr/local/lib/python3.10/dist-packages/IPython/core/async_helpers.py(78): _pseudo_sync_runner
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3030): _run_cell
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(2975): run_cell
-/usr/local/lib/python3.10/dist-packages/ipykernel/zmqshell.py(539): run_cell
-/usr/local/lib/python3.10/dist-packages/ipykernel/ipkernel.py(302): do_execute
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(234): wrapper
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py(539): execute_request
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(234): wrapper
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py(261): dispatch_shell
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(234): wrapper
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py(361): process_one
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(786): run
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(825): inner
-/usr/local/lib/python3.10/dist-packages/tornado/ioloop.py(738): _run_callback
-/usr/local/lib/python3.10/dist-packages/tornado/ioloop.py(685): <lambda>
-/usr/lib/python3.10/asyncio/events.py(80): _run
-/usr/lib/python3.10/asyncio/base_events.py(1909): _run_once
-/usr/lib/python3.10/asyncio/base_events.py(603): run_forever
-/usr/local/lib/python3.10/dist-packages/tornado/platform/asyncio.py(195): start
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelapp.py(619): start
-/usr/local/lib/python3.10/dist-packages/traitlets/config/application.py(992): launch_instance
-/usr/local/lib/python3.10/dist-packages/colab_kernel_launcher.py(37): <module>
-/usr/lib/python3.10/runpy.py(86): _run_code
-/usr/lib/python3.10/runpy.py(196): _run_module_as_main
-
-Ú
-/fc/fc.2/MatMul_output_0/fc/fc.3/Relu_output_0/fc/fc.3/Relu"Relu2®/usr/local/lib/python3.10/dist-packages/torch/nn/functional.py(1471): relu
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/activation.py(101): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1508): _slow_forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/container.py(215): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1508): _slow_forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-<ipython-input-6-ad9e0534febf>(12): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1508): _slow_forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-/usr/local/lib/python3.10/dist-packages/torch/jit/_trace.py(124): wrapper
-/usr/local/lib/python3.10/dist-packages/torch/jit/_trace.py(133): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-/usr/local/lib/python3.10/dist-packages/torch/jit/_trace.py(1285): _get_trace_graph
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(915): _trace_and_get_graph_from_model
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(1011): _create_jit_graph
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(1135): _model_to_graph
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(1596): _export
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(516): export
-<ipython-input-12-fb096e134290>(5): <cell line: 5>
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3553): run_code
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3473): run_ast_nodes
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3257): run_cell_async
-/usr/local/lib/python3.10/dist-packages/IPython/core/async_helpers.py(78): _pseudo_sync_runner
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3030): _run_cell
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(2975): run_cell
-/usr/local/lib/python3.10/dist-packages/ipykernel/zmqshell.py(539): run_cell
-/usr/local/lib/python3.10/dist-packages/ipykernel/ipkernel.py(302): do_execute
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(234): wrapper
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py(539): execute_request
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(234): wrapper
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py(261): dispatch_shell
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(234): wrapper
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py(361): process_one
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(786): run
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(825): inner
-/usr/local/lib/python3.10/dist-packages/tornado/ioloop.py(738): _run_callback
-/usr/local/lib/python3.10/dist-packages/tornado/ioloop.py(685): <lambda>
-/usr/lib/python3.10/asyncio/events.py(80): _run
-/usr/lib/python3.10/asyncio/base_events.py(1909): _run_once
-/usr/lib/python3.10/asyncio/base_events.py(603): run_forever
-/usr/local/lib/python3.10/dist-packages/tornado/platform/asyncio.py(195): start
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelapp.py(619): start
-/usr/local/lib/python3.10/dist-packages/traitlets/config/application.py(992): launch_instance
-/usr/local/lib/python3.10/dist-packages/colab_kernel_launcher.py(37): <module>
-/usr/lib/python3.10/runpy.py(86): _run_code
-/usr/lib/python3.10/runpy.py(196): _run_module_as_main
-
-∏
-/fc/fc.3/Relu_output_0
-onnx::MatMul_23/fc/fc.4/MatMul_output_0/fc/fc.4/MatMul"MatMul2Ÿ/usr/local/lib/python3.10/dist-packages/torch/nn/modules/linear.py(114): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1508): _slow_forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/container.py(215): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1508): _slow_forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-<ipython-input-6-ad9e0534febf>(12): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1508): _slow_forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-/usr/local/lib/python3.10/dist-packages/torch/jit/_trace.py(124): wrapper
-/usr/local/lib/python3.10/dist-packages/torch/jit/_trace.py(133): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-/usr/local/lib/python3.10/dist-packages/torch/jit/_trace.py(1285): _get_trace_graph
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(915): _trace_and_get_graph_from_model
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(1011): _create_jit_graph
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(1135): _model_to_graph
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(1596): _export
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(516): export
-<ipython-input-12-fb096e134290>(5): <cell line: 5>
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3553): run_code
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3473): run_ast_nodes
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3257): run_cell_async
-/usr/local/lib/python3.10/dist-packages/IPython/core/async_helpers.py(78): _pseudo_sync_runner
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3030): _run_cell
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(2975): run_cell
-/usr/local/lib/python3.10/dist-packages/ipykernel/zmqshell.py(539): run_cell
-/usr/local/lib/python3.10/dist-packages/ipykernel/ipkernel.py(302): do_execute
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(234): wrapper
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py(539): execute_request
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(234): wrapper
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py(261): dispatch_shell
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(234): wrapper
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py(361): process_one
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(786): run
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(825): inner
-/usr/local/lib/python3.10/dist-packages/tornado/ioloop.py(738): _run_callback
-/usr/local/lib/python3.10/dist-packages/tornado/ioloop.py(685): <lambda>
-/usr/lib/python3.10/asyncio/events.py(80): _run
-/usr/lib/python3.10/asyncio/base_events.py(1909): _run_once
-/usr/lib/python3.10/asyncio/base_events.py(603): run_forever
-/usr/local/lib/python3.10/dist-packages/tornado/platform/asyncio.py(195): start
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelapp.py(619): start
-/usr/local/lib/python3.10/dist-packages/traitlets/config/application.py(992): launch_instance
-/usr/local/lib/python3.10/dist-packages/colab_kernel_launcher.py(37): <module>
-/usr/lib/python3.10/runpy.py(86): _run_code
-/usr/lib/python3.10/runpy.py(196): _run_module_as_main
-
-Ú
-/fc/fc.4/MatMul_output_0/fc/fc.5/Relu_output_0/fc/fc.5/Relu"Relu2®/usr/local/lib/python3.10/dist-packages/torch/nn/functional.py(1471): relu
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/activation.py(101): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1508): _slow_forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/container.py(215): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1508): _slow_forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-<ipython-input-6-ad9e0534febf>(12): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1508): _slow_forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-/usr/local/lib/python3.10/dist-packages/torch/jit/_trace.py(124): wrapper
-/usr/local/lib/python3.10/dist-packages/torch/jit/_trace.py(133): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-/usr/local/lib/python3.10/dist-packages/torch/jit/_trace.py(1285): _get_trace_graph
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(915): _trace_and_get_graph_from_model
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(1011): _create_jit_graph
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(1135): _model_to_graph
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(1596): _export
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(516): export
-<ipython-input-12-fb096e134290>(5): <cell line: 5>
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3553): run_code
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3473): run_ast_nodes
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3257): run_cell_async
-/usr/local/lib/python3.10/dist-packages/IPython/core/async_helpers.py(78): _pseudo_sync_runner
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3030): _run_cell
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(2975): run_cell
-/usr/local/lib/python3.10/dist-packages/ipykernel/zmqshell.py(539): run_cell
-/usr/local/lib/python3.10/dist-packages/ipykernel/ipkernel.py(302): do_execute
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(234): wrapper
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py(539): execute_request
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(234): wrapper
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py(261): dispatch_shell
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(234): wrapper
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py(361): process_one
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(786): run
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(825): inner
-/usr/local/lib/python3.10/dist-packages/tornado/ioloop.py(738): _run_callback
-/usr/local/lib/python3.10/dist-packages/tornado/ioloop.py(685): <lambda>
-/usr/lib/python3.10/asyncio/events.py(80): _run
-/usr/lib/python3.10/asyncio/base_events.py(1909): _run_once
-/usr/lib/python3.10/asyncio/base_events.py(603): run_forever
-/usr/local/lib/python3.10/dist-packages/tornado/platform/asyncio.py(195): start
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelapp.py(619): start
-/usr/local/lib/python3.10/dist-packages/traitlets/config/application.py(992): launch_instance
-/usr/local/lib/python3.10/dist-packages/colab_kernel_launcher.py(37): <module>
-/usr/lib/python3.10/runpy.py(86): _run_code
-/usr/lib/python3.10/runpy.py(196): _run_module_as_main
-
-∏
-/fc/fc.5/Relu_output_0
-onnx::MatMul_24/fc/fc.6/MatMul_output_0/fc/fc.6/MatMul"MatMul2Ÿ/usr/local/lib/python3.10/dist-packages/torch/nn/modules/linear.py(114): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1508): _slow_forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/container.py(215): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1508): _slow_forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-<ipython-input-6-ad9e0534febf>(12): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1508): _slow_forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-/usr/local/lib/python3.10/dist-packages/torch/jit/_trace.py(124): wrapper
-/usr/local/lib/python3.10/dist-packages/torch/jit/_trace.py(133): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-/usr/local/lib/python3.10/dist-packages/torch/jit/_trace.py(1285): _get_trace_graph
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(915): _trace_and_get_graph_from_model
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(1011): _create_jit_graph
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(1135): _model_to_graph
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(1596): _export
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(516): export
-<ipython-input-12-fb096e134290>(5): <cell line: 5>
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3553): run_code
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3473): run_ast_nodes
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3257): run_cell_async
-/usr/local/lib/python3.10/dist-packages/IPython/core/async_helpers.py(78): _pseudo_sync_runner
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3030): _run_cell
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(2975): run_cell
-/usr/local/lib/python3.10/dist-packages/ipykernel/zmqshell.py(539): run_cell
-/usr/local/lib/python3.10/dist-packages/ipykernel/ipkernel.py(302): do_execute
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(234): wrapper
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py(539): execute_request
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(234): wrapper
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py(261): dispatch_shell
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(234): wrapper
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py(361): process_one
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(786): run
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(825): inner
-/usr/local/lib/python3.10/dist-packages/tornado/ioloop.py(738): _run_callback
-/usr/local/lib/python3.10/dist-packages/tornado/ioloop.py(685): <lambda>
-/usr/lib/python3.10/asyncio/events.py(80): _run
-/usr/lib/python3.10/asyncio/base_events.py(1909): _run_once
-/usr/lib/python3.10/asyncio/base_events.py(603): run_forever
-/usr/local/lib/python3.10/dist-packages/tornado/platform/asyncio.py(195): start
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelapp.py(619): start
-/usr/local/lib/python3.10/dist-packages/traitlets/config/application.py(992): launch_instance
-/usr/local/lib/python3.10/dist-packages/colab_kernel_launcher.py(37): <module>
-/usr/lib/python3.10/runpy.py(86): _run_code
-/usr/lib/python3.10/runpy.py(196): _run_module_as_main
-
-Ù
-/fc/fc.6/MatMul_output_0/fc/fc.7/Abs_output_0/fc/fc.7/Abs"Abs2≠/usr/local/lib/python3.10/dist-packages/torch/nn/functional.py(1770): softsign
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/activation.py(1390): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1508): _slow_forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/container.py(215): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1508): _slow_forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-<ipython-input-6-ad9e0534febf>(12): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1508): _slow_forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-/usr/local/lib/python3.10/dist-packages/torch/jit/_trace.py(124): wrapper
-/usr/local/lib/python3.10/dist-packages/torch/jit/_trace.py(133): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-/usr/local/lib/python3.10/dist-packages/torch/jit/_trace.py(1285): _get_trace_graph
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(915): _trace_and_get_graph_from_model
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(1011): _create_jit_graph
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(1135): _model_to_graph
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(1596): _export
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(516): export
-<ipython-input-12-fb096e134290>(5): <cell line: 5>
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3553): run_code
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3473): run_ast_nodes
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3257): run_cell_async
-/usr/local/lib/python3.10/dist-packages/IPython/core/async_helpers.py(78): _pseudo_sync_runner
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3030): _run_cell
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(2975): run_cell
-/usr/local/lib/python3.10/dist-packages/ipykernel/zmqshell.py(539): run_cell
-/usr/local/lib/python3.10/dist-packages/ipykernel/ipkernel.py(302): do_execute
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(234): wrapper
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py(539): execute_request
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(234): wrapper
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py(261): dispatch_shell
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(234): wrapper
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py(361): process_one
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(786): run
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(825): inner
-/usr/local/lib/python3.10/dist-packages/tornado/ioloop.py(738): _run_callback
-/usr/local/lib/python3.10/dist-packages/tornado/ioloop.py(685): <lambda>
-/usr/lib/python3.10/asyncio/events.py(80): _run
-/usr/lib/python3.10/asyncio/base_events.py(1909): _run_once
-/usr/lib/python3.10/asyncio/base_events.py(603): run_forever
-/usr/local/lib/python3.10/dist-packages/tornado/platform/asyncio.py(195): start
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelapp.py(619): start
-/usr/local/lib/python3.10/dist-packages/traitlets/config/application.py(992): launch_instance
-/usr/local/lib/python3.10/dist-packages/colab_kernel_launcher.py(37): <module>
-/usr/lib/python3.10/runpy.py(86): _run_code
-/usr/lib/python3.10/runpy.py(196): _run_module_as_main
-
-ˇ/fc/fc.7/Constant_output_0/fc/fc.7/Constant"Constant*
-value*J  Ä?†2≠/usr/local/lib/python3.10/dist-packages/torch/nn/functional.py(1770): softsign
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/activation.py(1390): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1508): _slow_forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/container.py(215): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1508): _slow_forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-<ipython-input-6-ad9e0534febf>(12): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1508): _slow_forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-/usr/local/lib/python3.10/dist-packages/torch/jit/_trace.py(124): wrapper
-/usr/local/lib/python3.10/dist-packages/torch/jit/_trace.py(133): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-/usr/local/lib/python3.10/dist-packages/torch/jit/_trace.py(1285): _get_trace_graph
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(915): _trace_and_get_graph_from_model
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(1011): _create_jit_graph
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(1135): _model_to_graph
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(1596): _export
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(516): export
-<ipython-input-12-fb096e134290>(5): <cell line: 5>
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3553): run_code
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3473): run_ast_nodes
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3257): run_cell_async
-/usr/local/lib/python3.10/dist-packages/IPython/core/async_helpers.py(78): _pseudo_sync_runner
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3030): _run_cell
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(2975): run_cell
-/usr/local/lib/python3.10/dist-packages/ipykernel/zmqshell.py(539): run_cell
-/usr/local/lib/python3.10/dist-packages/ipykernel/ipkernel.py(302): do_execute
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(234): wrapper
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py(539): execute_request
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(234): wrapper
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py(261): dispatch_shell
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(234): wrapper
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py(361): process_one
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(786): run
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(825): inner
-/usr/local/lib/python3.10/dist-packages/tornado/ioloop.py(738): _run_callback
-/usr/local/lib/python3.10/dist-packages/tornado/ioloop.py(685): <lambda>
-/usr/lib/python3.10/asyncio/events.py(80): _run
-/usr/lib/python3.10/asyncio/base_events.py(1909): _run_once
-/usr/lib/python3.10/asyncio/base_events.py(603): run_forever
-/usr/local/lib/python3.10/dist-packages/tornado/platform/asyncio.py(195): start
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelapp.py(619): start
-/usr/local/lib/python3.10/dist-packages/traitlets/config/application.py(992): launch_instance
-/usr/local/lib/python3.10/dist-packages/colab_kernel_launcher.py(37): <module>
-/usr/lib/python3.10/runpy.py(86): _run_code
-/usr/lib/python3.10/runpy.py(196): _run_module_as_main
-
-ç 
-/fc/fc.7/Abs_output_0
-/fc/fc.7/Constant_output_0/fc/fc.7/Add_output_0/fc/fc.7/Add"Add2≠/usr/local/lib/python3.10/dist-packages/torch/nn/functional.py(1770): softsign
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/activation.py(1390): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1508): _slow_forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/container.py(215): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1508): _slow_forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-<ipython-input-6-ad9e0534febf>(12): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1508): _slow_forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-/usr/local/lib/python3.10/dist-packages/torch/jit/_trace.py(124): wrapper
-/usr/local/lib/python3.10/dist-packages/torch/jit/_trace.py(133): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-/usr/local/lib/python3.10/dist-packages/torch/jit/_trace.py(1285): _get_trace_graph
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(915): _trace_and_get_graph_from_model
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(1011): _create_jit_graph
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(1135): _model_to_graph
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(1596): _export
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(516): export
-<ipython-input-12-fb096e134290>(5): <cell line: 5>
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3553): run_code
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3473): run_ast_nodes
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3257): run_cell_async
-/usr/local/lib/python3.10/dist-packages/IPython/core/async_helpers.py(78): _pseudo_sync_runner
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3030): _run_cell
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(2975): run_cell
-/usr/local/lib/python3.10/dist-packages/ipykernel/zmqshell.py(539): run_cell
-/usr/local/lib/python3.10/dist-packages/ipykernel/ipkernel.py(302): do_execute
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(234): wrapper
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py(539): execute_request
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(234): wrapper
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py(261): dispatch_shell
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(234): wrapper
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py(361): process_one
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(786): run
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(825): inner
-/usr/local/lib/python3.10/dist-packages/tornado/ioloop.py(738): _run_callback
-/usr/local/lib/python3.10/dist-packages/tornado/ioloop.py(685): <lambda>
-/usr/lib/python3.10/asyncio/events.py(80): _run
-/usr/lib/python3.10/asyncio/base_events.py(1909): _run_once
-/usr/lib/python3.10/asyncio/base_events.py(603): run_forever
-/usr/local/lib/python3.10/dist-packages/tornado/platform/asyncio.py(195): start
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelapp.py(619): start
-/usr/local/lib/python3.10/dist-packages/traitlets/config/application.py(992): launch_instance
-/usr/local/lib/python3.10/dist-packages/colab_kernel_launcher.py(37): <module>
-/usr/lib/python3.10/runpy.py(86): _run_code
-/usr/lib/python3.10/runpy.py(196): _run_module_as_main
-
-ã 
-/fc/fc.6/MatMul_output_0
-/fc/fc.7/Add_output_0/fc/fc.7/Div_output_0/fc/fc.7/Div"Div2≠/usr/local/lib/python3.10/dist-packages/torch/nn/functional.py(1770): softsign
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/activation.py(1390): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1508): _slow_forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/container.py(215): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1508): _slow_forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-<ipython-input-6-ad9e0534febf>(12): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1508): _slow_forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-/usr/local/lib/python3.10/dist-packages/torch/jit/_trace.py(124): wrapper
-/usr/local/lib/python3.10/dist-packages/torch/jit/_trace.py(133): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-/usr/local/lib/python3.10/dist-packages/torch/jit/_trace.py(1285): _get_trace_graph
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(915): _trace_and_get_graph_from_model
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(1011): _create_jit_graph
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(1135): _model_to_graph
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(1596): _export
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(516): export
-<ipython-input-12-fb096e134290>(5): <cell line: 5>
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3553): run_code
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3473): run_ast_nodes
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3257): run_cell_async
-/usr/local/lib/python3.10/dist-packages/IPython/core/async_helpers.py(78): _pseudo_sync_runner
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3030): _run_cell
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(2975): run_cell
-/usr/local/lib/python3.10/dist-packages/ipykernel/zmqshell.py(539): run_cell
-/usr/local/lib/python3.10/dist-packages/ipykernel/ipkernel.py(302): do_execute
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(234): wrapper
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py(539): execute_request
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(234): wrapper
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py(261): dispatch_shell
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(234): wrapper
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py(361): process_one
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(786): run
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(825): inner
-/usr/local/lib/python3.10/dist-packages/tornado/ioloop.py(738): _run_callback
-/usr/local/lib/python3.10/dist-packages/tornado/ioloop.py(685): <lambda>
-/usr/lib/python3.10/asyncio/events.py(80): _run
-/usr/lib/python3.10/asyncio/base_events.py(1909): _run_once
-/usr/lib/python3.10/asyncio/base_events.py(603): run_forever
-/usr/local/lib/python3.10/dist-packages/tornado/platform/asyncio.py(195): start
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelapp.py(619): start
-/usr/local/lib/python3.10/dist-packages/traitlets/config/application.py(992): launch_instance
-/usr/local/lib/python3.10/dist-packages/colab_kernel_launcher.py(37): <module>
-/usr/lib/python3.10/runpy.py(86): _run_code
-/usr/lib/python3.10/runpy.py(196): _run_module_as_main
-
-Ô
-/fc/fc.7/Div_output_0Position assessment/Squeeze"Squeeze*
-axes@†2†<ipython-input-6-ad9e0534febf>(13): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1508): _slow_forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-/usr/local/lib/python3.10/dist-packages/torch/jit/_trace.py(124): wrapper
-/usr/local/lib/python3.10/dist-packages/torch/jit/_trace.py(133): forward
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1527): _call_impl
-/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py(1518): _wrapped_call_impl
-/usr/local/lib/python3.10/dist-packages/torch/jit/_trace.py(1285): _get_trace_graph
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(915): _trace_and_get_graph_from_model
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(1011): _create_jit_graph
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(1135): _model_to_graph
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(1596): _export
-/usr/local/lib/python3.10/dist-packages/torch/onnx/utils.py(516): export
-<ipython-input-12-fb096e134290>(5): <cell line: 5>
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3553): run_code
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3473): run_ast_nodes
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3257): run_cell_async
-/usr/local/lib/python3.10/dist-packages/IPython/core/async_helpers.py(78): _pseudo_sync_runner
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(3030): _run_cell
-/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py(2975): run_cell
-/usr/local/lib/python3.10/dist-packages/ipykernel/zmqshell.py(539): run_cell
-/usr/local/lib/python3.10/dist-packages/ipykernel/ipkernel.py(302): do_execute
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(234): wrapper
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py(539): execute_request
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(234): wrapper
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py(261): dispatch_shell
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(234): wrapper
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py(361): process_one
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(786): run
-/usr/local/lib/python3.10/dist-packages/tornado/gen.py(825): inner
-/usr/local/lib/python3.10/dist-packages/tornado/ioloop.py(738): _run_callback
-/usr/local/lib/python3.10/dist-packages/tornado/ioloop.py(685): <lambda>
-/usr/lib/python3.10/asyncio/events.py(80): _run
-/usr/lib/python3.10/asyncio/base_events.py(1909): _run_once
-/usr/lib/python3.10/asyncio/base_events.py(603): run_forever
-/usr/local/lib/python3.10/dist-packages/tornado/platform/asyncio.py(195): start
-/usr/local/lib/python3.10/dist-packages/ipykernel/kernelapp.py(619): start
-/usr/local/lib/python3.10/dist-packages/traitlets/config/application.py(992): launch_instance
-/usr/local/lib/python3.10/dist-packages/colab_kernel_launcher.py(37): <module>
-/usr/lib/python3.10/runpy.py(86): _run_code
-/usr/lib/python3.10/runpy.py(196): _run_module_as_main
-
-main_graph*ÏÅBonnx::MatMul_21J–ıÊ}ºò¿Á<Ãˆ=çk<>üiº&ë—º–=
->Çä=]=´‰ùΩ¬aü=^;Í?ÍºÒ‰˘ΩœAº·•=Ø ‹º¢˚]=èühΩAê’ºûæªÙ˜>=?ÜU=‹s∫Ωãºƒ/=sfã<≠∑kΩy{v;‘¨º§;πùÀ<#˘ıº∞~πº⁄Á5Ω'‰º!∫I:†—ç=>äΩA ÜΩMó±:r`ﬁ<6®<t˝;aÒΩ n;’
-ß=≠4æ_u<8(
-=?⁄U=–«ØΩˇ§ëºÖA`ª7ﬂSΩ¿\=Ô¢Ωc,âºon™=úyãΩA7¢Ω”P$>AO\>hΩ/¿hΩ‘=‘Û,>ÎémºÒ0û=h)Ω‰⁄3>”ìΩ∆{ÌΩ)vÜΩlaÂΩN6º2Ïªq4≈=¿'ßΩπVT=≥Pè=|⁄ê<ÜÑ=%V‡<'_ª<Øfê<]6¨<J9ÚºmÂ◊<øﬁlªˆ0À<6YÅ<ûª=–8¢ºÚC∞º"k5=ON<hc<ò€Ωˆ—™<≥Ωı°Îºˇè=ùç“<4<öº˛•˚º¢√J=nú=	ÆºÄÂºæ‡ëº|:<Eõ;%â™;ä_9=¯÷ÔºgÃ|<ŒA-<ÏIJΩ(S¢∫'˙R;˝•∫<Î†9>ﬁvMΩU4I<5<ô=»ä=!P4<À-%=8ôMΩ‰U§=¢ÖzΩ£≤‹ΩóÛFΩsÌ:¨’ò=OÇ˘ΩFÌú=‚Úr<7'0=j=˛Êöª«´%>Íı†Ωå¡Ωÿ2¢=-‘ü=-/ª<¨îFΩ 
-<åûñº◊™1ª˙—º|"∑ΩƒÒΩpê˜ªΩóª›üZ=÷Ìt<,sœ<Qî;(¨A=KS>h‘ä∫µJ®Ω^‡¸;>„ºaäºBÙ∫ RÁΩ¢yêªa:ΩˆgCΩK◊ÊΩ¸”ÆΩÕ€Æº‘≈ïºöA=D6∏º˛¶Ωd[IΩ2π>«?Y>yΩ˚˚≠Ω˛%>œ9>⁄àµº+Ω˜ôΩ¸]>±ü<Ωç∫æNvO<+EΩÒh	º)?Ωhè¿="÷§Ω™[Ä=÷Û@<œße=CøÄ=∞-¯=ÕÈØ;§_û<ﬂBÖ=^≤E<”[¨ªÕcD<Áüh=`Å=e◊Çº{Î="áo=ë´>ÓΩû˛;ÍMÍ;Î≈/=+∏Ñº<-Y<©1a<ﬂQ“<zGΩ„p9ΩÙ4<§¸ï<záΩ∫ûΩ˘®`<‚MΩmcË<»Ó¸<~ó6Ω˘â'º∑º<	êR<E\—º5«AΩÈÕΩÈõ<∑/>˛åóΩ0ÆcΩò√=iEÓ='Ö6Ω0ª˛°	Ω+pà=#EΩ¿…¶ΩÅ≤°<â©Ω©≥8=›º}…i=2õ;©%Èª˚∂Ω-zHº∂±Í; Z‰º≈X£º›Á7=ùÓÿ<_Áºµ À<mÌBºAº“<]å…Ω—w¿∫S˚I=+°1Ω⁄Í„ºπçÎΩWEB=◊9ºº<*0ΩÑCÙ<¨‚2>›3 ΩÓ`ΩPd<e	<FÿΩ∏¢2ª“3÷ΩÜÿ¥=mÜ<9ÁéΩ=˛ëº<àΩˇØ<8b‹ºeY”<–_
-Ω|∆ØΩ™…DΩ›=5ÍT>vÖÉΩ≠ÂΩ„õ=≤\Ô=Wö®Ωúd•Ω0ŒºV&>ªf…Ωÿæ¸—¥<≠Ù¶Ω=6c<∆ÂÖΩ≈>–§üΩ:Sí=•/==ÂπÉª€:=>|›ÓºB«º`=Hçç=Êˇá<áñˇπˇNk=√&<))==acΩ\bùΩE∆=∞í∞=ã±Á<(D≠ºw3Õ=Ì⁄Ωú¬º;‡Ωà´'<Ù∞0=Üy<°Gª$ÍÉºƒÙ<T”=<}ºñ›«º€≤ñ<ºWˆ<ÆoAΩ˝	Ω2«∂º¨Û!<üGƒº(7ΩMt]<W≤ΩÏ=ç}n>ƒÉãΩØYÿºü	ô=QíÔ=Òãâ<hp[∫üêlΩbπ=fC®<LΩ	∆ùΩ<FŸº‘¶=ﬁÜºπ∆∏<Wc0ΩÂTΩ˙πqÖ=@ñ=π˜<$÷ª¨æˇ<¢Áç=øÛLΩ¿∑fΩ1œ¨ΩTëfª`ŸºAo˚<k§zΩ™≤6<ø6¡<CŸZº’Œc=LÏj<"µºó	îºêﬂ≠<9\ >∆•Ëº+Å<˜8û=˘
-ª=˛#ºº≈™ÍºwΩÆl◊;Xw Ω6Oåº_B4Ω/2∏ºR¿fºï»¯<{y=ÃKø<XΩŒ≥ΩÓ÷…=hJÁ=S¬ºÓ=3æ-§Æ=DI⁄=òF˜:úÙSΩ-À˘Ω	 î=iü‡Ω¶}æˇ\Ω(±∫ΩØ!ΩhŒΩ‰9>°cáΩïèò={a•=iz;÷U>€¿Á=π•9;¬ .=Ó'Ç<ó«º_≥<»ºîKß<ÀT;=å∞≈:«¡≈Ωbê=8Iâ=‡:4º£9~=ô∫<=¯Êƒºk=à’˚<`Ñm=}ΩÕwÑΩ)=Ω9FG=%qp=~í∫<∞ÈÜΩ≤M=ˆ^&=jå∆ººæÃºg1 ºÎP=ô¨ZΩÇ◊ÏºæLM=YoY<Ïú ΩƒùÑ=îTv>¢Ωw≠—ª∂,h=0~>¥|≤;±…;òÊ&<º¸%=e™Å9]‚åΩŸ+ÜΩ·—µΩ1Gò=∏DﬂªÛit==«;Ïÿ•;l≈∫ƒÀ=øå¶=Ωe|ˆª¢ ï<è´=œ©†;v¥I<´X´π/í∑<Ü˜Ø<ç∏¢Ω¸<[úPΩèE=v∞ΩÖ8∑<ÉTG=◊©=ë,;ßª=¯Õq=0∫uΩ|îíΩÁbÏ<.O∏=Ë‰Ê:|› ∫R◊><ùˇ÷:6¿ºa† º¨[Èº«≤5Ω˘∏K<2%
-Ωê'`=’ánΩw∫<Ωÿc•Ω)m>¸ty>dàgº	‘«Ω<#Æ=?G>⁄∞ºe4ºû>Ωü˚
->◊Ë˙ºRI”Ω+≤4ªq—´Ω7Àäºﬁ…Ω'ÄÈ=x8OΩ
-G==J=j=ÙD>Ÿm=¢{;j{A=‡Ï7=öà˘<§l=‡%=Ê5W<È{G=ªÇ7<zdΩΩGd=-ﬁ‰=^û¨ªé#b=Êvb=æUZ=^´™=.8Sª?)>r>ÖΩ[p%Ωª¿<—@p=j◊˚<‚)<Á©áºHG+=:=ì>¯<[¶:yFú<π¢ª®„=K¨ñ=?•éΩ"u<¿H’<…•=VÙ=“B¢Ωlë‚ºçŒ<¬†=ûïZ<+`∆∫¸€”;s>$‹îΩ7tΩá'ìΩ/SΩ≥êb=V:4=r∑≤=·ñ»Ωy Ÿ;-œHΩî—˙;_=…=Qa—Ω_»<I8ç=‰PÕ<I‡Ó;ıcΩ ~Ωb—¶<«≈(Ωˇ‚ ºÁ8HΩ›5¯ºÙ—º<m÷H<ê,=Y’”=Ëø¢;C≈=<ˆ®w<Û5=úﬁúΩ;ÜSΩ“}É<*⁄f=`¨üº(ò-ΩxÂªÕÑ;=‘çΩˆi7Ωœ€aΩÄΩ0wÆ∫âYùºyÔ[=‰hºªé¶º$n
-ΩÎå>¸Xq>GºZyΩAà>íÄ±=ég‰;c“>Ω’˝$Ωùû >©Õº€1æ*%HΩ∂›ÒΩÊ¡º9≠∫mΩ›\Œ=œŒãΩ€…|=VMË<Bæ¥:3GΩ=≠∑9=ÿ<â‘ı;ñh=S >ΩäUÒ<“˙=Ó#ˆ<•‹¡;√G#=ÖÉª`æº∞ä¥=√Û\ΩÈµ)=¨$ì=ÖRÎ<ÚXî=rÍóºë{>•ﬂΩ$«ºÈm=Ñ,≠=!í=
-<ºäº Ô•=ﬂ{=,Œs=EyÑºÃçª√ e<,¿ì=≤∆=nk:Ω*ıΩ´<%µ=Å€∞=√˚¿Ω˙˝º™˜á=ì1P=e§∆<rΩ\4ºLs=ÚÃsΩı=eΩazEΩ@gXΩæp;=ÁΩà9R8=«‚ÇΩƒ=Ω‹dô<‚wÍ<´π†=QÕêΩßT√∫¸«nº5( =U÷·ºÈEIΩ˝ƒâΩ˙óÚ<ë˙ΩU≈Ω=g–cΩ˜2ºwÉΩz—-<NM7=ÅA=Ω–‚OΩ6$(=»[ë=f§Ω$W#Ω1~Ú<]2£=>æºc>Ωˇ≥'<¶∂<Z@ΩuÂÅ;Ï)Ë<*\Ω˚é°º¯Ï√º_t=∆i\ºˇÕΩdMúºf‚=iM>6ÙÎº}§ŒΩúz>+Èî=Y´`Ωı Ω•Êáº>> [•Ω·∆ﬁΩâ]<ªyÈΩFH
-<v3èΩÊ	>è‹eΩni’;0.«=ÅUÑ=—5û=∑’âº◊"p=ƒ3?=¬±=+0b=u–<dC=K&A<È$∂<44U<(L=ºÈâ0<…˙,=KU˜ª;xªñ7=h=+ﬂX=¶Ë<£Ÿ=]ΩÜ„çº;Zq=|V=n=™ê¯<ã◊pºÑé=O'ºG∞w<ÚQâº™ºã=u#’ªæ≈P=∑øÀ<õPkΩ¬g¥ΩSŒºÑË=•=F1mΩN≠OΩœ0ä=≈Ç=é∆óºEÔ∫ΩjÙ™Ω`#ã=›Kº"Ω∆+Ωyy6<+m\=‚2XΩ¶ˆ™<bøº“ÑΩX≤<OÑí=W7$>.Y=Ω˜˝
-Ω¡Èv<=™<¢ÀŸªÅΩ>kΩ‹ö`<Ëñª€∂åºHÈ<ÚîΩ‰-◊ªú#∫ºî«*=∂4Å=˛9>Ω¿ÌΩ*jõ=Ω†2> 9º›∞ÆΩÛgì=X±»=ÏßNΩ@aÕ<‚r;U‘
-=gØ|ºßÅgºáe2=∞§n<bèº[ßÉ<∏ª=åçª˘ æQaΩ°¡=öM>VÑΩ‚£ˇΩ∞S∫=hﬂ="ÉΩπáΩÖ°Ω¨À¢=›*ØΩH‚ΩΩ`.àºµÖÁΩ´JHº6+’Ω6I˝=·Ï∫ΩÊg:º"Á8;¢€<3…>ÍÌb=I]é=÷LºÆ`=ùDùºIJVΩø–ª•‰ö<Yâ•<Æ6$Ωî>“q⁄ºø	=>?2ºó’;'z›;≠ùê<Ω#=—ùé=@û>lRãΩÏÿ©ºî≈u<ªYL=„÷°º¸∂¶ªóΩfÕ;B=∂Á∏=U⁄ªë9qº√ï∫∫(ÿ=ıR#<9ú◊º\¢º_9>Ωˆc=ø¬©=¶˝âΩÑ0àΩs~Ä=ççá=v∫ÿºÌÄΩÑòdΩ0Ä∑=tõÀº/rÜΩúΩv˘Âº,Ñ=˛"/Ω/[í∫EG˛<ˆ9ÿ;v+ΩA(<˛¯>Ã´Ωjé≤º	ç=}˚Î<M°Á;eΩ„#<OG∏=ü}Ω5a/ΩáÁ<¬(ΩÍ"πºo	=ûl=øÆªﬁèíºkBõ<TK=.£ô=‘ê‘ΩPÄ¸ºº⁄Õ<R÷ä<#â≠Ω§óºÓ0’<V¥v=^∏BΩY]øΩãl=<À0åº2“º"*ºπi =™[ºπ§i°Ω*ïQºäﬁ=w5>Ã¿ª≥: æ™í>MC>,Ω7~ΩNﬂ)Ω.¯œ=r∏dΩªAÛΩ#ñºıTçΩe¯€;VéΩ”kÙ=∑‡ØΩÖ
-ºõ-'ºb=@Û>@a≤=3a;ÏÈr=C0W==zF=√Ω6Œ:º¶8:”Ï=Qò=A¸“=Ä·=~ =o}∫.¢º´ã Ω?º´:M#=5ßå=z¢‚=ŒÛƒΩ€Ù⁄ºÜy¶<‚s>=∑l2=b9^=A.5ΩQår=Sˇè=ìe!=w´M;˛=>;R<>ä°º/–<◊w=›JiΩ'qΩIòî=€‰=µ°”º‘Ø∑Ωƒm_=ı÷˛=∫Ω⁄%ª>*»;.Z=Ç Ω‚;Ωπo*ΩJΩâΩz∆B=ËîΩSDa<C≠=<Êùº„yöºÓ?Ä=—Nœ:¿IΩpß5ΩàÜe=VF<=’–∫ΩS©°:ˆ£›<ü<É{@Ω-˘éΩ¶›É=  ≤º_$;l"GΩl√W=$"¬<ÊçLΩóÑ:b#g=1`>ÂÂIº%kÙºúå=`î=‡O<°ïº…-Dªû§ò;“R<)SΩXh<Ó|µΩç|m<–ª<è–K=X¯ºç[êΩ©ææAº>2Ì‘=ƒ7<MPöΩhTí=:G≠=˛µDΩmªΩåMÂºói±=∆}Ω3À,æöÖΩ U|ΩlâAº=3ıΩ…˜©=+JÖΩ±(<Ù£=$≈øºiÏg>^∞≠=†˙;úÛ–<Ø¨=tHr=v≥ÑºçÈ∫Ã∑´=∑pv:°∆º,‡º≤bì=‚4_=÷T<◊FΩÉ_∫É¥•=hhc=˙Ì[=s˜2>:¢aΩ∞„ΩÊ…<yV=ˇìu=Æäœ<ïHˆºÃk≥=Ú◊˛9(–'=-À;‚ºïlõ<çy»<⁄åÒ<Ä˛=¥{∂Ω.œ@Ω“••=Nî = àΩ√cº}Âã=E£ò<t¶ΩëΩ-tâΩø»c<j[7<DVéΩ—è(ΩØ}É<À¢e=√JΩ´:Ñ<[âlΩÓTÖºTÀï<B= ®=*#ïΩÊ!5<0¿="ÊŒ<>u
-ºåyáΩôÙ<e¯û=®bÎ;∫õÿº¨_{=Ó«Ω¶ '<;Ó9ΩÇO=GbΩ©¸ú;:¥ºq‹Ù<œßì=©ºë,ΩÇˇ®=1î#=6SÖΩ/XãΩ%V)∫éOØ=x´Â∫(o≠ΩäÔ=OÀöºXÛyºX0;ƒö<Áaê<@hΩ›Ü°Ωò…‚=ï>>ZürªÈËàΩÃR◊=¿#≠=R≠Ω_ÜÙº Kˇº3>Ø…˜ΩµÛΩ©)œ:ΩäÀΩå]Û;—üΩA>Íº˘µL<£¸%=&¡=O>ê|ø:ı;q?aº˝¬*=ﬂ·;<€√<Õïz=G<∑ï.=≈¬:¥Ã]=c}=>e{ºP—tΩÍd÷=÷MÏª	„=”T≥<ŒQ<ëCy>MW™Ωô’∑ªEÛ;vı=fécºå<2Îg<qzø=2ä==≠+=&∂<j8Ë<¡bÒπ‚◊n;Èß’º®>/Ω-P»ºÁ¿ÂΩús(=xîæÓèFΩ»cøº’£Q=©’<¢œ"ΩpøñΩ¬Ë"Ω”(1=Ô†πΩ∏P©ΩcéΩ7lΩŒ|=·Y˛ΩT°ΩªºªÃÔıºÒ^ªì∏=<K÷=h"BΩl%°<åü<|A=§vΩ~y—Ωeoº•≈a=˝‰ΩcAZΩ¥Q2=”†ºØ≥ÓªÚ©éº⁄5j=üñºÑ9AΩM+Ω; J=j|ﬁ=ó\¬Ω°7ÓºgIr=ñ¶à=êw*=ﬁÌOΩ˙åº#p='Ωrx∏Ω:ë∆<[*ù<4ºº‰Fá<[˜=ˇê%Ωó∂ΩwâΩ”.>ôÙ>ÊçﬁºÊÇ|Ω¨x¬=π=ÅÊõΩ3∏ÄΩKëΩM¿∏=
-9∂Ω#{ÆΩú%_Ω>˚˙Ωåî‰ªd™±Ω(jû=(CÎΩ≥Ìâ=!#+=uÎ=Óà=É
-ÙªNé=x$3=à…|=¥·<˘ú™ºkÑ∂=–E_<◊WW=F˘=¯N<»x[=•Ì‡º@R"ΩgKË=zR:›ÃMºPçJ=˚ U<£∆W>–íöΩÁ3]ª^5<!oò=!õd=:–‹ºx:&ªD£–=ãÄ=FõF=·∑=O3_=Ïéº.’0ºV≈vº®1Ω:âuΩ{⁄ÀΩ¢_¥=	 YΩHÓ¨ºôΩR!<7G’ºxÅΩz¥Ω@ΩZÄ¡=˚·–º+ëƒΩπf≤ºµu∞Ωpñ=˚Ω¯¢=¯ÖtΩw±ºﬂp0;`O9=g¥=FV©Ω5;µºåz=Ëm
-=◊û;Ï8·ºÃ–∞ºWP§='–w;T Ω(íº<∏ïªq;ˇ:{ÄΩrg•=”œ;ø\Ω∆M=Üö=¸Â='‰oΩ÷åΩ;öÃ<≠ﬁó<DåΩπ„º AΩ°›=H¶®;q‚üº‘;Èlµº„ï#<*èº◊±õ=l~≈ª©ZÅΩÅá¿ºM¸˘=SÚ=Gø$Ωÿt•ΩíÂ=LW¡=_>≠ΩWïΩ9Ù®ΩD™D=¨ªªΩ8˙∏Ω´S¸º€∑†Ω_Ñ<sˆ‘ΩÀ÷>∫ΩΩS3<⁄= Ó±ºhh™=~8Å==à=ÖI§=Ué=2D;ˇ€Ω€u<dÇv=Ä-=â5=ÆÃá=ÈÂí;Jëﬂ:›ú◊ºQº=≠ˇΩüxE=^[—<°™^=s7Ú={rºÀ˚FΩC<T#Ñ=†á≠<˜PÇ∫et“ºf√=8‰r=)=È>Õ<;è[<;◊ˆªÔl∑<©Ÿì<‹Ì)Ω¿¶ºü¨æΩíR≤=Uã*Ω6ΩI£Ω?]∫; Â¶;ÜF'Ω¡"4Ω©®⁄ºVÂ\:ÏΩ{ÆÈΩvJ†ºvWΩß˛ú<æ∫ÖªÏ¡=¿ç4ΩŸKΩ…èˇ;∞–â=µ⁄Ç=·”ƒΩ2úºÇbu<ô◊<~Ω /?∏]ù9<ı0S∫Ûº4Ω—òF<J&ºÀ2eΩ¿¥àºµîΩÆ]•=˘⁄ê<J‹ºya”;Ä§5º∂¸ä=g=¡ΩÈÔxΩ‡<ÏÆ®<√ﬁæΩ"äâΩ‹£º˘ò“=ëàíΩôø‡ªŸÀ Ω71<äÃ⁄º"è˝º&Gî=— ¡;høàΩÇ·Ω˝@>›Ñ6>„óΩ≈∏ªΩëcÑ=x¯w=L≤Ω÷~zΩÏ∞§Ω›·>Æıºã⁄‘Ω%F´Ω1øYΩ÷ˇ-<é◊õΩÓ«¿=FáﬂΩq'±<h∏å<êΩBAÉ=ûiº∏¨ºo ù=X≈=°Ò,Ω∑ü\<U†üΩ˚Ä<q«€<YÄ%∫‹∑=Óˇ=LëΩ˛é=±=Y0æ_S=ÇÄ=v%ã:»X¥=∞í¥º>÷SΩ¯˜"< »±={…<VzºÒO√ºm¢=«Ω„Qª ‡¸;Ù˚Ø<Ç›Ëªåñc=A◊î;=v˙º7øΩ¨ÀÉº˝X=çﬂHΩ“&Ω…ùΩSè<C	%<Y¬ΩÖv±ªæ;ø<x}ë<ˇ“òΩÂgêΩÑ.öΩOõ·Ωåœ<og∆Ω'´8<ûD Ωÿ	‹;kd#Ω¨7Á<√SrºV'hΩ“y◊º>=ä?x;–6Ω¶àVΩ⁄≤é<Û@=°ÁñºÆIÖΩG4¬<ækåΩ—§ﬁ;Äœ—ºûfQ=ï∆|ªÉ∫ºãv†Ω^ıò=âÀL=K;5Ω1âΩNk=˜hz=>p=Nhz∫:ÑóºD˝<Z–ºPõ*ªB^Ω åWΩUDk<˝ÇÎªÉ˝2=îi‹ºΩ*æøøûΩõ¸>÷7$>‡„ºe›ΩyÊ≠=Ã–>è“ñΩSÛº·£ÉΩ4 …=ùOÕºˆ„dΩH◊õΩI{ΩA©œ<ÉHuΩ®Ë†=áÑÉΩyç=Ò¯˜=≈P8ªÍ4B>D√(=‡/uΩ˚7ƒ<vV®=,ÚÆ<·∆ Ω* LΩtì<=ù2ä=«¢:Ωl#6=ø<`<'ŒΩM,\ª)cΩ^ÔÖΩŸnè<ù∞ëºMhº∆l∞=-Áº2Ωã)<Ÿ∂í=N¯=\z(=›çºÀX<=(dº[8èºk‹!<‚÷
-=,"#ª\ì9<˙∫;<Å,Ωn’6Ω_MæΩ^uÒ<l§Ω¿Ô4ΩgWΩ’Sß=Fœ=`Ü?ΩÈYñºvB=Ω±2ê;)H“º÷‰’º¡!Ω÷„≠Ωâ=]Öº‹©’<¨tGΩ¢Lä;˝˘¿º[™<ÿ%P=ÍYΩé<G;&œ;N[±=°)dΩøΩfW≈;˘£5=XSzº_áΩß
-)=s\7ºÒº<ó`Ω«◊#=ñEæñ‰ÁºkÓΩèO‰<é˘í=ä*Ω£äÔºç Œ<—µP=ràæΩ¶~zΩõèÓº¬ﬁ÷<µø•Ω€º<ÔMØ<QõmΩ¬E<l’WΩ»R=e√$=î‰DΩÙ¯˜º—ä=·>AñΩœ5‰ΩŸ	>E‰È=ùΩ–Ωeªàº¡áΩµΩÁ=zQ∫ΩZuÖΩQ—ª!¡∞Ω«:=Á‰æèäŸ=>ú_ΩAò=ˆR(ºj|R=U"@>'ùœπùèÇ<\ˆ ª?Ω<yw<Xª<„-¸;£ ÷<å~=íA∞ºõ9£ºÉç&<„éΩWWÖºÑ¢`=·SJ<ì»<ÿ3=s¥<Ófø=•Ö9Ω'[Ãº·‘|=iæÇ=J}=UØ€:Ñ„Dº~gL=o≥N<"ÚÓ<s≠*<ô¬Ÿ<ï‚#;⁄ñºV‘º+¥ºÆpΩüXTΩí,ÿ=∫ı=çô<Ω—5ÖΩVò√ºt†o=>ÆÒº ‰îΩHâÆ8√ÏÆ=6!°ΩÒ1Ω£ù>=LäΩ:¯m=ìNãºa“<=˙=)ΩòΩ”∞÷º$2=ıŸŒ<Jã4ΩùaVΩπ% =3ÔÊ=oÙ»º¯e§Ω4›<G'=õßΩΩiººÍ=#+A<∫Bt<Ë´ûº1vz;^1Ωòﬁ1º¿-«<.L.=k˛ <:8lΩ2Áº~Ê<@5|∫√&•Ωa˛°Ω^¥yΩuºó˛Ωn
-Ωî7—<kΩä≥<±¶Ω»2ß=Ï;5<p‰rΩùD™Ω›4p=Ìø>ôä¡ΩèÈÂΩ# m=ƒhº=÷Ì¬Ωªk∞Ω8±5Ω¬∂¡=P©ΩÛ¬›Ω*≈;v™ÛΩßB =æïàΩ⁄)œ=o'7Ω»:Ñ<;{>=?˛=Ä®4>í•_<ƒ∂=€c+Ω´ <´='∞Œ;^x”;eÉ=∆U	=ùl.<k¿V=,==µækˆ=ªW0>4Å¶Ω5^;Äi˜<<˙<äïºµ‹˙ºSbΩ±tò<yS1=Üﬁ+ΩY2æ<Súº®‡=yjF<∆=˚x<7)ÄºªSº5A†<∆¢D=Sˇ<∫ëΩ„YhºuO¢= 
-‚<ﬁ	ƒºe√Ω∂Ê,=}Qò<ÜÅΩ¬N[Ω.pΩGrû=¿Z≠ΩüHâº°Œ´º•æ|Ω≤¨4=›äaΩã∂‚<~”¥º≈vâºuçXΩÚ⁄é=N´=hAiΩ{eΩUEx=hü=‡ΩEËΩaìîº¢ˆ‚: ~Ω9ã:º}ç2=ßπMº%,‚<àufºd+=’ÛŸ;ÂÏ7Ω—∑yΩw"°<ä–=U–Ω“ÄΩ%•=ã_
-=JπΩíêlº⁄îΩˆb=å<îΩ¿Ò⁄∫]:\;⁄ÔTªá≥*=æ]ˇªﬂ◊Ó<\çÎºùxΩKT7Ω1#Û=œ.=£åΩΩ[ æK±=e%=á#Ω+úΩñÕ¶Ω1Tˇ=∞Ú[ΩºæÿüΩ:	}Ω’’ò=1ÃxΩXAö=Üã]Ωsh=n›ª¡J∑=¿Ÿ<jv6ΩJ˙ <v˙ºË¢=O≥àºÔ<û_ΩÅˇñ<;§==/ﬁªºkU&<•@.Ω<{öΩ5D…<i_Ñºı€Ω\ÖΩ.µŒº6Ÿå<Ó+o=ìÈ;Ω|¬∂º(º3=≠∂<5ªÈº€$◊º5
-Éº˜πæ:FÆºàΩΩ<ˆ{=>`>ºôúEª>Ü;≤=$_ôΩDÍâΩc†á='…Sº ÿ<>á'Ω_b<¶<ö&Ïº£˘ÅΩÏ’ﬂº‘|ÿ<Q€SΩÏêΩuíBΩ˛óΩ‡HO=+9Ωü]ø=—&œªQ±Ωπ*Ω˚'<|∑¶='LΩÅû›º
-ÔS=—Å=&X0Ω	 4Ω˛O0Ω%0_=ÆΩùØ<ON€<‡tΩƒ3Â<F„¶º∑Tx=ïæ=w%*Ωˇ~úººB∑<€E˝<DunΩ¬DìΩ˘·S<—∂=RzØªåÉéΩc_Ω‚∑à=ßúΩíÖ¡<) ¶;∞/ ΩÊNŸ<X ÖºøTA=jn=E∂çΩ^{ıΩ˘J›=fj»<§j≥ΩÄÚæì=rÈ‹=¥jçΩ™¡ºœ@ æ™∂?=G}‚Ω“-ëΩetˇΩ˙îËºœ¢}=Ë‡¬Ω_âa=√™lΩiW§<¢ª=√ãÌºÆêèΩØöΩà%§<ÖﬁcΩ§ 3=pà= Ï/Ω^9=ó„à=Sâ<·jΩù\£ª\0Ω1\ÅΩæ{_ΩoìA=gæΩCOH=÷˘É;ÜØÖ<ô=ùÍTΩ(+íº≤ã2=ù3<Ü¢Ç<ﬂ¿H=æ-¿ºW˙ª¨C<ºìV´ºE⁄<{≠ºÆ˝ºÈÀ˙º%x7==g6<w/ùΩj`Ω)Å®=Y¬rºÿﬂåº◊QΩ/o=¯Å†<∂∑yΩ"'úº!:Ω@]}=Ÿ	öΩ∏◊TºÀ=dπßΩ_∫C=k¥ºΩíî=kßΩÔüΩMlΩá	\<Ïm Ω¸O"ºgŸÀ<"ûê∫áBk=îŸπºîÛRºÅ~ºr¨y=cèºo5˛º»º÷;jaeΩ@=sΩû∂=ÿB/Ωß˘üΩ<#VΩ2‹î<◊‰!=~˝uΩe78Ω†Gá=LSË<‰ú¶ºM˜DΩEîaºpãÂ<PUΩò/Õºm= fáΩ≤C=ÇÄLº9‚p<’ky=çÀΩcVPºS“ó=ˇ¶°=¨ÙÁΩÃ√Ω%'∏=P≥Ù=
-XΩ&áúΩ úΩ8\´=Ü|»ΩŸÈNΩˇ©©ºø(æI∂Ø=C7Ωrcê=ÌáΩ0Qc<°Cº…JÍºs‚‡<'*áΩÍ∫+ΩÓ–X=Í/ìº¥ï8=∫o∫¥M©<Íp~=‰Y =qC"<ˆ<°ªÅ√Åºc€ΩÙÀ$=íè<ëç§Ωé RΩà¿<[îª“Ωæ∏!Ωóﬂ∫IÇß;¢y =ÔéºËÎºË∆èªçb≠<““æºRWã<s0£<¿K∏ºÅ8:U¶nªáöªM-<pìÇΩ<ØΩ’O=¸(3=s hΩ§πœΩ˘°=†‰ó=YxnºƒéΩL≠Ω'“™:˝ÂΩN0ΩUÉ»π⁄ÏäΩ“ÛC=lıªN1<Øﬁ‡;≠ÇΩò!ÿΩ◊€”<æ´ï<€›ªıG9ì¥_<ÚN= FˆºÅ ﬁΩ·òΩ‡+=Î.˛ºúàº§Q%=Ô\ºP+T=•NΩ0Ùªz≥sºÃ¢Ωbû˙ºƒ4=q¨ÄΩqΩü¥éª˜3m:∫öp=≈ÛlºıÈ4ΩÄBΩ»ò5º–MΩ¨D5ºÍ¬=¨ùΩñ·˚<ê5-Ωê=\è(=E%˚Ω}õ‘Ωºôª=©ë„=sÿöΩ:Å˚ºi¢]=@q’=¿Gæk⁄ΩréæπÃü=<ÙΩp∫2Ωqº:6ΩŸË≠=bT˙ºStŒ=∫$¿∫7jΩÎ∏(=±Ø¢<©_#>ﬁ»º/âÇ< µ§=v…AΩ†î=GFªl«¡<õHá=Ω±¢<…mlºF9aΩ´%ù∫ÃáΩ∫ç=ªãèΩ2Z\Ω—;ÅºSΩ»ºΩ€äªBãÁ<iéÚºE¶BºK=5<˚ºmyIΩNY_<c5ëºwΩ=ˆØ	ºàı;¢†¸;Uõ'ºX=<g[∏º◊.Ωò‚ª…˝DºâåΩÀÑ=Ç-4>lÒPº«…>Ω|à‡:>\˚=ó„CΩ±ÒuºãÎºµ:Ø=^L‹ºΩÒ¥Ω8&∑ºATΩA$7=ÑÍΩíà=[È<ÎFΩ®ƒdΩæF;µEPΩgˆΩ2PÉºÌ)=÷*=¨ÏÀΩÃﬁMΩµ*ΩÔÔZ=í¢ºœıUΩ[ãÆ<vØºÖ=ù≤Ÿº90z<s(Èª)¿sΩi<…ΩK.B=c∂ªªœáÒºRîﬂº‰ä=7&U<X€)ΩØì:ΩÅı*Ω}Ç;6ÍΩ{9ñ;}GŒ<¡ù(Ωiu=à˛7Ω)&a=ÇÓ‚=Õæ=5'Ω∏ú[=›C◊=¯éÃΩ
-*†ºÖD≠=NkÆ=·÷Ω®é%Ω’æñ£ >ò¥òΩ≠¥∫Ω.C¸º¥ÅËΩ¨≈=KQNΩ9U=%âg<In/<mDÀΩñoDº‘dÑΩ”º©º Zoºzœ%=\ïººø8<Z;◊º)açΩä°Ω<3<qÉ;ıﬂD;n´ º}lŒ∫ØíªîÙΩÀÏ∏ºuI<∞4/ΩspZ<ÁBîº¿UΩW/¡º+ŒÌ;xY≠:©FNΩñåÚ<Ø iº√zà<ñﬂçªKÌ;“’Uº‘æºyr <uΩºl¨ÀºÙ$º°0LΩ4Ç6Ωîà=◊»>>yU5ΩΩÒº™J˚<¢dø=Ω—lºæ≠ÛºÙVº˝Bà=yº6ªSÅÄΩ`ﬁèº^¯ΩB¡<=E∆º¯JÃ=»π<<>aΩ±¡º«<Oª3'‰ªyèΩm¢.ΩÉ8R=N[À<õ7ÌΩhÒBΩ`›bºk¢Ü;ÓUºc9Ωºî/<FS>Ωú8=aõ{Ω á=siR;K·∞ºpÆΩ S=BƒΩŸ;ΩÖ?Ωbc <&?Öº§^öΩ{ÂòΩt?%Ω≥ Y=$wΩ»)˚º2=#4ñºÀ∫H=Ä·Ÿºë†=#dv=ùJGΩ?–˘Ω	`°= tè=∆çΩ§¶ΩÊB*=•î’=%µÿΩÆv]Ω›ÿΩÿ˝M=p ΩºYæ¶gÕΩ«¿€Ω—Ωµ=ƒRΩ·ó=πÔºZ°8ºmÒOΩKºØÅMæ™äΩçâ¨ºiN¿Ωw	^ºIE~<π[Ωª;7ºW›œº•˜—Ω60ﬁª*Ωogºû·iΩ’Ì:—ÎõΩÖäº—çfΩrpÑΩ°›˚∫„é	æ˘µΩTìºXòΩwÌÊ<>Û(º⁄ÆÀªù∂/º◊úÇª^‘r;SXªEnºúÂÎº:Óh<Qªƒ;Õ•ª%Fôºnj%ΩœÇzΩÿ#∫=˝îº¨ ≠ºG‹ÇΩcBÄ8é?"=#ˇ<Ω7ÜΩq]@º∫/µ=≈(]ΩáôºwVá:A8ˇºñáì=ç•ΩÍm<bâΩÍ%bΩDKΩbOÃ<OÇÀΩ$∫fΩ'‹=ΩS'<OR-=ßêD<.ã7Ω^˘§ºÖ•J=?˜ºË∆/ΩíU˜º∞tΩ0_=ÒlΩ˜ –º‡JºöñCΩﬁ•Ω&=2œ∂Ω…Óº,6•º©èC<◊G£º#lØΩòòΩÓÿ·ºÍ.'=˙MÊºÙ{\Ωö8<ÌCΩﬁS"=…*ëΩdâ=ÅÀ<˝Ö⁄Ω\È…ºÒ›N=§ò0=OπVΩ(óΩ™)=è˜Q=®£ΩW+∑Ω.î˙ΩOŸæ=‡ÎΩ≠˙æ_¶ΩÙçΩΩü”=IiΩîU©=ô4ŸΩ\ΩM'éΩ‚©Z=_ÁæqÆxΩîwº›…äΩL3YΩ@Sz=õJö<N<áº,+⁄º»J|∫¯ëhºæ›qΩN5Ω1¨√ªå>ƒΩ6Ωæç<Ïäçº€àTΩ[äïΩ9I	Ω§Aº7"˛:Ô0‚<€vÜºà§ºÎiÄº¡å–:‚º5øÿª◊˙ÖºP°ŒºêŒG;bîÑºÎ∏±;∫å!∫ÖQΩÕΩ7EÇ=ï]g="Ãaªˇ⁄WΩìî=”F=„∞VΩª(›º ±iΩò‡=r«˚Ω;Ö=®õºLÀlΩ†“n=}0¿ΩLQÅ=j8ﬁ< GΩM˜1Ω`ß`<—å®ªo#ôª*≠TΩTˇ,=;æV='&®;}Ò$Ω¢—Ω9ñî<zCXΩCo§º§	ΩBˆ-ΩäP=–6ººéº nˇªﬁ¬ëΩò≠„Ω=ŒS<¥VºÜY{ºKº™ºìô¿=˚»€ªƒ;Ωéî·ºó?Æº`<*'"Ωäd9Ωæ› ºF¨±ª˝Â3=ãu'Ω@U∫t¬ª;\°Ωf/ÚΩ8Úö=a>è< ÉvΩ˚ÕºLáî=Wô.=∞‹Ω¬oΩÉZ+æ?PS=ïæ'Â≤ΩÃ%kΩLò‚ΩÇ÷=Ãû7Ωd§=∞òÁΩÃΩÈ^îªh8A=sy ª?cnΩ≈%<¸|:Ω¶ü£Ω÷<Œ;Y⁄∂ª¿©ãº _Ω£^Êº¯Åp;yˆΩ“G	ΩË?˚Ω•„*=PGΩV4äΩÈU¢ºcWyºG§w:ùÑΩl\ˆº¡∫º‘œÑ<4|w<oóºä°;<\∫Â=PΩãæ˚ºÛû“;·ûºBjﬁºZÃW;Éq:+@º∑Õª#ì&Ω¬/™Ωˇ"3=˛m¡=ñ"ΩVÊãΩ:≈=˜Ñ„:ôó¿Ω`MÑΩÜR§=ôÁ<ñ=ÆΩì¥lΩÉ®Ω$zΩÿ†™<{ZíºÓâÔ< öºΩEΩa˝z=≤±&:™]å<€°‹º{=ºı <>i}<"òΩ˚.∫ªˇöê=ü‘ïΩ„(^<c'√ºÊ™ºD´}=ÖâAΩH£7<–X;í)√ΩÕ◊ΩÍö≈∫‰<4ΩD”≤ºD»†<åãã<»„=MÃùΩû2Ω:*º@’Ç=í˝èΩä Ãºyá;.lóª];k=x√º,ô?=≤s"<hÜgΩüÂÉΩTåî=9SI<ﬁFΩ{(®ºœ¡e=‚€ï=ÄÎ≥Ω"*¨Ω«1jæYSÆ=§çòΩbk¢ΩtèAΩëQÙΩ™÷›=RFîΩ≤Õù=†≈öΩ&∏!=√¿∏=}hÜΩgj’ºî®Ω…ΩïΩº=<[=#»Òº‰ÌIªÅq⁄ºÑπ·ºı˘«ºãπ<£`,Ωruz<°˛ÇΩÚ^=Ö∑mΩN˛ ΩÅ 4Ωk"Ω4AxΩ|º®ΩπèΩ‚i}º—úªxìË<
-ÁëΩ⁄*Gºqnº~Ω;â<g"ªP]Åº≠˙º£®ƒ;ó]ê:„∑ºêá¬ºUΩ{ãΩõø˘ªkX!=Åm∫ºbÆ¶ΩŸü=l∏…=¶(’Ω8¿Ω&Å;@h’<œCâΩ∑GHΩ°≈wΩƒ˘XΩ…≥x=ﬁ	“ºd≥<)Y~ª4…ΩÉêÂº2=4=ØÇÆºÅ¶ª∞ëº6ÖA<˝PΩ< EΩ+◊OΩY†áª‹œ\=P∂PΩqõK:uã2ºMÌØ∫8ç=0»fΩπ=NºH3–ª~⁄ﬁΩ:Ë—Ωˆªco€Ω˘DÙº0àTºO=*="Aˆ;ÅÿŒΩÑÊÇΩÕ1º˙+	=+òÇΩ	¨C=Kóöº3çΩtíf=˛è=ΩΩ˙<
-˝M< ·ΩF˛ﬂΩKå#=Õƒ°ºÈ}ÇΩn˝ºLä=:u{=¥æòΩÏÍUæ«¸=µ∞ƒΩ≤≥&ΩÎá∞ΩDΩU˜¯=ı˝æ‡ëh=~ >º9AΩËSªyæ˚Ωm§√Ω—\⁄º’UΩ ƒº√é“<S¡j∫ì1ΩÃÄ{ΩóhΩÊÁIª4Ö#Ω……Òπí¡ºˆk=‘%:ΩFÊœª“ÂWΩE˙ª¢°Ñ∫m+ æﬁZ#ΩP°6º…'*ºÔŒEºÈ∞Ω∫≠Ωwª«ºjÁºVhôº˝1S<ÜºÔc\º¯D‚;™;èK‚;≥ÍÍº¨$Ωj˚hºd6u=Ç º]ºº™Í$ΩºΩh=kRS=(Y¬ΩW@ìº…SgΩéÓ<∏ÁRΩz§ΩÅFãΩÛåëΩf…T=òÀGºiÿä∫ÏÏ•º¬%ƒΩ‚JòΩ™∏ıK]Ω∂,'Ωé’¶ºöDo=e5‹<?XèΩÇ˙ªË§∫º8UºﬁêKΩ≤‘CΩƒSU<r∑êºåFì=Ì° ΩnÌ<Î0<´qoΩÜˆ¸Ω=‹=M¡®ΩÄM1πEJ3ªö_«<Èl=M Ω"%Aº2√ºwÕg;^Ø æiïÜºKﬂp<è#ÄΩQ∫õ=¡ˇµºS]…<\ Iº˙]bΩxVΩ-=Ö$Ô<Ô
-=éæ/æ3=‹’¢=≠T⁄Ωºà~Ω@êΩò¢\=·æïßΩ=Ÿæ¶ﬁ$Ω†)>√ˇæ|Vv=Öc‚ºÒ:;ÕÇèΩb=<¿7æÇúvΩêd∂ª˚éÉΩà˘<OF’º8ˆıºÒáÕºØeº?ΩqÆºaÉQºı∂ºê<úø€<€/æá‹∫7AJΩÊ)Ωç<8¸0æ@Ω-Ì=º“‹§ΩÎ|Ωﬁ1Ω+¯jΩR5Òºdé¸<áÔ8Ω“≤∆;D≤ºƒ°Ωº•A<Ó>„ªe´)ΩxÂ:ºﬁGΩo"Ωí«+=ÙÉº!ç°º‰Ïº{=∞Ññ=¡ıïΩ™ΩàΩdóîΩgN˘<-M@ΩÍ£ÌºæJäΩZáΩ gG=Ö‡ùº√Ì√<qÓ;rèΩ*óôΩN®=§ÙåΩbf.Ωè∞ÿºøìj=<˛◊º1·©º€„{Ωx÷;≈‡ˇ:S‚ΩdjΩºgE< √äºdì=õΩëˇ¨ºFrc<}í°Ω,äΩ¿8ı<Q?åΩ¯/Ωº$ò8¬î;=†=/ìÆΩ	~Ω∂°„ºc¢≠<´<éΩ7…˘º≠wº?‘Öº	Nç=∑±ªÔ¡K<Ÿx9=∏ÔöΩò˙ÃΩ¡	ô=2LºçWtºYPA>8ùÿ=,À§=—áΩQ∂ΩæLÎË=nêΩo_™Ω*Ω@ÅÌΩñ#>æÈΩ*!B=j€Ω¯DîºÕÉáΩ ≥⁄<Ç«æU¢úΩG∞G∫êv‘ΩûYmΩ$Ì=Ωs±ΩÀêª’öa<6Ä¶ΩöÉÖ<˝£º>º¨∆_Ω<À<ï:êΩd6ûªËKΩi£RΩ∂8≠<∆‡Ñæº≤JΩ«Z¨ºøC‚ºÇ-Ω…ÆºÒΩ&N˚º◊ÓÖºöÃãΩ*Ò;$s˝ªæﬂmº™êÕ;KÜ<Äv(º
-ªÇºJGèΩÑPuΩfññ=X…Ù;Ì;ÿ∫2∫Ôºv‡a<´ô=ƒaΩQ◊iΩb))ΩÅN<|øäΩ2¬≥º–®ΩMÏûΩÕ)=X•º4¢ª‹Öªòá£ΩNßΩ˚ã◊<~’ÊΩ^jΩÎΩπzΩ‘}—ºnx@ΩQtΩv=¯õå=5	PΩn[Ω¨T.ºü…0Ω}=˜ÖΩÛ2∏<·ÉÂ:]ΩºΩ™ôºZ¸Ä</Å4Ω3BºmN[º¸d–<øﬂ`=Æ}LΩ8≤´Ω ÉèªK{=ûôäºÈàwºHÈ∑º û)Ω
-á=ﬂ	2Ωπv†<ß◊=-1ÀΩÒËΩ∏h≥=Úà®º8dÚºˆ∆ªÿhë=!∏=Ö1–Ω¶/äΩ‡Ç˝ΩED=?e©ΩºWΩΩt‘ΩOñæΩ°>Ω‹ÍΩ¢ôÑ=Ç∏ƒªqÙvºÂ@~Ω´/ΩÿÙ~æ!˛∫Ω±çºTΩ†<ËóΩ„§§ºì¢uºÔ∆o∫ô:ºP‚Ôº¶Ö<\XΩ5´Ω≠ì/Ωx6=åsOΩ3r¡ºk_!Ω‰ÅΩkÿˆºèxÑæ‡=ΩTÄáº›´õºæøΩÈÊKªIÑΩùxΩ®õ;™âØΩÂuºRrºıâœºÙ¥N;ŒlΩ:î&ΩÒs≤º»ÒQΩˆ.ÛΩóMt=$º°<"¶P;òΩêú°<<s=x°Ω£üπΩˇw;´k>=4ØnΩ¯*ΩX%Ω	+(Ω∑L5=ÅöñΩF<ò
-—ºP`Ω∫ySΩ!iÜ=•ÅÃºõE*ºñ“,Ω≤2Ã;ã…t=8ú5ΩáIΩ¸Á	=‡_<æq2Ω›Û≈;JTÜºsÜÛºªä{=¨ÄΩZçM<Z(˜º:@°ΩÖ-$ΩŒ¡÷ªh8ÄΩ˛mæº3ëS:—z\<!›7;SD9ΩÜ@ΩŒMÔªazª¿•ΩŸ˘Ω{jº]∂ÉΩ7Ti=ŸgïΩÑtâ=èÏ9∫B¨ãΩ¬-ÌΩ@Á=fú;~ûΩï*ºË]=>æ∫=-æS’±ΩéﬂΩßhS=’À«ΩZÙ≈Ω7’àΩQë–ΩÉ;>›ÆÿΩ é=Uá=[sDΩö0ΩY'zΩiÅæòÊÖΩ§ñºˇeº@Ωq>¿ªÚâjΩ€ó5¶–ŒΩè~GΩ5$˛:=Öºõ6Ω©ÛÑº*ÜˇºMd∞Ω÷‘Gº}à¢Ω‡ΩwΩˆ‘OΩŒe^æ˝≤LΩﬂŸº¨®l<Wi:Ω*Ú∫Ω9ΩD‚ΩOΩµ9ºè«ÅºÛúwº©uŸºöªﬂ∏(ªæ;ΩiqÖº,‰áΩ‘´Ωb	=ÔóìΩ÷ÎPº2¢ÃºíO”=`Õ'=∂K æƒ^ΩRßGºe<<ﬂLHΩ7é ºôºR]©Ω˝ˇ<õ#äΩoÄ“<d£≈º˘ãWΩk∏<æ0.=YàJ<∏«ºa°ºÉcºÇ‘e=œ6ºiˆΩ˝À√∫µ–/=;àΩx∞ïº‰ÜÏºƒàΩÙHc=uàΩÂ!º
-%%ΩˆeñΩÊü¬Ωl,ÄºﬂWåΩã º—eª[v =@=Pq•ΩÑ√/Ω(‰Õ;Zãº«ÇΩáa)Ωﬁ‹ŒºÀÃºFﬂm=CïΩ‰#Ñ<¿÷';¢ÒæÍ¯ΩûÛ–=Q6=ÂìnΩœÜ=è˜ß=FÇ=V¶æñåŒΩqn<Ω9ç∆=˘◊∂ΩTË™Ω>hΩŒ0èΩ•>î§÷ΩÈ	_=Óã=#E‰ºâiΩY“ÆΩ£ãæSì.Ω&HÖº*˚Ω.†»Ω∞£ûΩ,ø3ΩÍë?Ω Ω‹•LΩºL7<V`Ö;≈q,ΩÖOΩï6º¯•ŸºL÷Ôºh©6ΩÜFΩ≈ªm,cæc*?Ω7üΩ≈è	ª·ÂüΩã∞dΩ>
-^Ωîôøº|ÀÑºvºãöºqèÒºyxΩ©éì9K€ûºnûΩ˛hFº à¡ΩΩøΩ£4Æ=ˆ1∂Ω4™^<ØÅΩˇ.C=‚÷=‡™œΩ\ó´ΩéﬁBΩ’)‹<ˆ´JΩŒË˚º‰g+ºî‹~ΩÈ‡&=}ãTΩ¡F¨ºÓ#óºp6ôΩ$“KΩı€8ºËΩ	π‹◊}º(ﬁ⁄ºrCYº®=≥/ëΩhëâΩìMx;<õÑ=ô∑ºeﬁvºÈÑΩ°ô;;™*=$[–ºBl9Euëºπ˛mΩøxïºˇG<ìâΩÇÛ∫-Úºh¿<1|K=∑Ë9;¿C`ΩÙ*Oªb¥÷º™]ùΩ
-ˆ?Ω{iΩ-XΩ¯t=æ∞?Ω≥–3=≥W<ÂgΩ9ãæ2gﬂ=2¥fΩhâΩD⁄Œ< s—=Õ{Í="mæ˘SπΩª(Æ9Íü=ÛYkΩgÛÆΩ◊=ÓΩHÃ·Ωú>ÇøΩ?ÍŒ=Ø=uu‚º€ô1º"∏õº7U†Ω≤;Ωí-¥ºA›ñΩ‡"PΩëZiº9[Æº,‹úΩˆUAΩ?ûΩájıª›qΩPΩˆΩwÀCªU·§ΩıﬁÈºS„ÀºQ—©ΩKPº¿dsæ´àΩ}íﬂºc¥ÿºg™{ΩÁ&ΩË±Ω\≈º›πGΩfˇºç†Ω_9/ΩëKΩRFªªJ;„ªU`
-Ω:o{ºòî≠ΩA∏hΩÛAä=nçæ»øî<¥SΩı¨î=˙ˆ+=!Ωò[¶ΩaÉTΩe>i=
-c’Ωö¢GΩoÓ7ºd∑ÉΩEG=ü Ëº≥@#;d_º'7Î∫Ïy¸º˚èÒ<	AΩeÛﬁºøÆ?ºÂ˝ä<6∏Û;çõHΩCà(ºE¥<r»ü=í¥ôΩ˙v◊ªuÑ®Ωo#ÑΩÑ≈=ÒÏºøûÒªóo=≈∂ŒΩƒ~8Ωµ4±<É#Ω›/∆º¯¬ÁºÎò=Óä>ºªã<´/Ω√‘-=
-=πôΩ”shº˛Î◊ºK≤◊ºKØÖ=≠ΩáΩœ{1<∆á;0zæåÖΩxO¢=¢˙ÂºË,Ω‹≥≠º◊…I=K¡=Y€æËëæ‚xê;NÙÈ=∫‡ÂΩOÿæYª æ~
-Ω>˝>ÍiöΩs=Â¸#:ï~âºí◊;◊PΩÜıÓΩe¸mΩ)„GºTƒrº@Mh<˝gº∞Ë;YπHΩ-∆æΩô∆dΩL8ã;¶ΩÆw)ºesyΩE7:ºùWâΩ[|FΩ!Ωº◊πΩ_`<≠‡yæ°XùΩ i˘ºB˜◊ºç∆µπÌ£Iº`fÆº+u´º&üΩø©
-Ω˝µ√º≥»$ΩÔíº§≈‡9ædÔ;”«ŒºFr∫ÛÀΩÿa˛ΩF⁄è=>Sæ7<<Ç˘ΩBÌÿ<ü{=vE∫Ω>ÊèΩ|ΩVO=]∂ΩLÈ9Ω_CºæòΩ%ƒ<TXnΩ?Q=ÒÕ©:Fös;eVqΩî;K=¢Z$ΩÍ[πºü‡‹º"Ñ4<Ÿü/;”%ΩS»6<Â-;,ƒˆ<ÖÇΩvÆÌºO¬Ω11ΩÃi%=6^ºüÂS<ñ+Œ<Oπ™ΩZÈ‰ºµ'#<ra∏Ω≠‚ª§∑Ω$À·<˚DÜ;@§ΩV-◊ºK¬y=Oó»ºRÄΩvù}Ωº™8ΩêìΩGa=®  Ω1ù!<Ñ@s<úÂΩ™k∑Ω—Œ≥=8≠OΩ@∞ß<wÈ!Ωõ’=Ω©=Ç,3æÅc…Ωr”Ñ=USª=•2…ΩΩö8Ω¬ÌΩ◊:œΩã>pá◊ΩﬂÕ©=¨“R=	‹ªIﬁ/ºMµ≠ºÀâ3æq¬>Ω›ºÚ√</lFΩpE
-ΩMª™;lå.ΩpΩ≈#ıº?Å2<,YMΩ JIº4r°Ω‚ëf:±,ˇº{˘õº‰ﬁVΩWh∫Ω˙c≥º›Ç(æø»¨ΩœéÒº=HΩºëóº÷c-;ÚÁ_ΩXóª
-œΩñΩ¢À;Ù≤«º∂ûBΩ5πfº_É<7°ΩÉÇ<àG–Ω†ØÕΩ∆=Ò!æAE<Å<∏º‡<M=Z=ΩùGΩg#£ΩˇQΩSº¿=6§æ'»hΩﬂ4n<*ì)Ω∞]˝<_ÜáΩ±ci=¬ùn<•Ò5ΩoMÁºïä<
-⁄ΩrˇΩ5ê*ºF„=“b=∞'lΩéˆ‹ºö@∞ºbqí=„ÉΩıª‰ªù∑ôΩáÜºü‡&==gºélº+|¸<¢U3ΩÎ◊ÑΩΩ¨=;yáΩ!«=7%Ωé{=ùm <≥®3ΩÑ%0ΩÕ"Ç=çÃª-ámºˆ 5Ωª€1ΩâKÖºŒ∞W=7®Ωà›=§zËºFæ⁄ΩÀ«Ωéƒg='ãΩ±€÷∫näΩ¬L°=∞^Ü<q≥
-æ¬"æìµ>4r‡=Ñæ™Æ°Ωë∏˛ΩæŸ÷>ºŒΩPÕS=ºﬁÇ=QΩ@ÚPΩüyÇΩu
--æ\¸ºão∫º»§[Ω‚ù˙ºd·+ΩÒø1ª‡é»º}ºG=Ω6º‰õïªuVΩº…ΩæW≥Ω`Dº
-î∏wÚ„∫,È˝;∑cºw˝C<s)Næ–¢§ΩFÖ≤º
-=•;{kjΩ ºµuΩˇÅ¨ºgNVΩ®ÃIΩû+{º5oÕºùäcΩÚ›Z: ∫πÂrÒºÎåªÑ¥ æº˚Ωké<§¸ıΩÍzS∫º†‡ºM =«]`<%Ï÷ΩT@ΩÙÅkºß=~É˝Ω≤ªkΩÌß†<»0⁄ΩVR=¬k∫Ωt+ÿ<··Æ<ÿWZªÎìÍº≠ö=2ÆXΩÊºLGºSFﬂ:≠Hy=ÖÂsΩ®¶ΩùÍΩPé∑ºD™Hº®G4º<ùΩ§D$Ω  *=ÜßÅºY≥ã=Ñ9= √ØΩwΩ∞h<%Ùïº]ƒô<w9„º†£ºM+ö:«ZöΩåQ'ºÄê=jﬂm=9…ΩŒ$Ω¯ÊΩåÚ†ºf¢R=DQΩÁO5=¯òΩ˛G‰ΩÆ]æΩ∫5@=ÇQıπïÙo=ºõΩ/∞¬=∞3Û=Ú¿æóLæ˛®>Ü<>⁄ÚΩ\gñº¥ÔæyÚùΩTÅ >éV¡Ω	´=3~Î<£ºΩ˙Óåºì5æ∂…∑ºÂìΩY‹òº!·Íº∏[∏ª$⁄ ºlÄÈº`≥Ω~<3Ωﬁª5ºl¿:º∏òTΩÃΩ†ΩóD
-º≥¬∫ùÚAªç≈êºh,æºÂ≈ΩÂBCæI§Ω*jóº›q®ºS3ΩJ4µº˘Âüª¯ÆCΩÖó=1˙WΩ∏£g:Röºô/Ω¨Åô;."£ªø∆ºµv6;±Ê≠Ωac’ΩÛ2=
-°ΩÌúº=Ω.uñ=ÇúÂªGÜäΩè'≈Ω≥é¥º–÷Ó<d7éΩÌ@vΩH]Õ<ñÕÄΩŸÎ˘<;iØΩï@è=™/g<;ÉôΩœ94ºêàX=ä ˘ºiÿ8ÿî°<ﬂ:∑<
-åß<ö€~Ωä√˝ºÒﬂ;«INºœÛº¯∏g<7Ω¥ÆòΩ+‘
-=,mÈºµvÓ;.}%;núΩõ¢áΩ˘õ2;jµó<ÂòÑ<≥‰∑º\Ñ=YHıº¨ÏC;å—qºB8K=òN\=óùìΩ}‹BΩâjΩ(°˜º√›]=˘3Ω≠ÙÈ<ﬁTΩv˙»ΩØh»Ω˚xÃ=‰CÁºSe°ºÅ·Ω;,ﬁ=rF—=–ÎæKvÇΩ!≈>Ï‡ã=Ñ)ﬁΩ∂fΩíD
-æ‹P‘ºj.$>∫ÕæŒò=ò>€Ωçº|˜ º≥:ΩÜâ8æãÉº˛^OΩb´"ºÙ∞Ω.Si<€ÉnºV®Ω=oøº’HGΩÈ≤FºˆfªN)Ω&“†Ω’5¶ºéΩ<È»Ω@gN;1]Jº™aA=⁄_æ¡ùΩ{œËº6Ωl∏çΩkìtº’bΩ¢AúºvÙç;›…TΩ›©<Öu‰ºÓàΩC˝âª˝à<I¢;Üü?<5ÇÕΩÖØQΩNÅ=AÆ˙Ω≈~Ìª'µrΩiA\=Gâ=wPΩË)∂ΩÑû›ºÚ(÷<wÿΩÏlΩÜ<∆õŒΩﬂÒ»<’jãΩp<_=ƒ;d%Ωqª•Ω∞U©<œﬁòΩã”d=%’4∫Wm<ödÄ=kΩïµ¥ΩÈ3L=w…≥;Â…vΩı	];o·Çºae≤Ωrá=[ZÀ:;XïºBvº\ﬂ´:ÔfèΩÌ	.=f˘éΩkŒı<0Úºo2û<È4<åÂºn˜ÑΩ,
-=N=õÌ1Ω≤j=Ω≠r‹º[‘iΩJÃV=¥˙öºÌ◊<ë°œª„L·Ωæ’‰†=Oÿƒª˜π>ˆ¢˙ΩåÇ=4⁄‘=€Ùæ>ÿÚΩkL=˙/)=Xûæ|7Æº:k	æ ˜ÖΩ¥ë>ﬁ+æÂO¶=C7ªœ}ΩFRΩüzOΩE”æUºîkΩ≥B ªé0∆ΩbZï;™Òªõ˜ÕºÂË;∑b~Ω∂ed;dÉ∫ˆ›Àº∑ﬂíΩ[ Èº∆æËºØ·ØºúΩÂÛºÚÇºÂ†´Ω®PYΩRQ¸º@ÍGΩúﬂtº^ΩÁ®˚ºÊtc∫G7ΩT6ΩˆOΩj≠ºÇ˙ ΩŸì2<≈•í<l	Ôºﬁ£9ΩíåìΩAàîΩºo–=fΩæ≈SÃºg‰Ωz+9<f&eªﬁçùΩ$$ÄΩ~S∂º8“>=9»Ω(§íΩa¿ªb[∂Ω0†¿<ô€∫ΩZ‰ü<»((ª√@ΩtæyΩka=+lJΩ6=ôb™πÉL7;÷’√<ÚÃâΩﬁéèΩjπ0=GÒnº(yΩ‚8Ω¶Õ"º®ÂpΩâ õ<…J;Rs3<!ÖÖ∫›óñΩb!OΩ‡3≥<f™c= bK=Ió⁄º·`=ôﬁs<£˙yΩk∫:Ó™=ªÅâ=®€ﬂª(QΩ;Â‰ºƒÈ∫ÇR=∆M„;}r=|”ª<PæAXæ<ø.=ﬂ¶<Ráô=Kn§ΩêÂí=`Å¸=·»æ¥ßΩ1‚≤=T8ë=@™ΩN[‹ºœêıΩÔ…ÆΩ≠G>y
-)æXën=Ãò®Ωp≤ºò:Eº∏Ä=ç"æG°∆πÎı†ªÁ˙≠º(ëôΩkDΩÆ º$¯Ω`©§Ω– 5Ω∫)çªù2@ªt?.:.~ΩwyÄºL_˜<1ºÆ°ˇºéıG<ﬂ≥ºó∑jΩZü£Ωw4Ωnn}<÷‚ª6)€<61oΩÕ”Æº@◊oΩ±#gºáƒº
-O7=lΩHÿºCÑºü≠¿:¥'_ΩöBÕΩ˝ïÉΩç∂â=âBËΩ˚√ª|’ËºƒØ=Cì;+ Ω∞rƒΩq‚≥ºœaK<¥Ωìµ®Ω˚`‹º∑J5ΩOÌ<ÍeΩE˛}<B_º=Ω§º∫e=^îπΩ£∞è<‚¥Ùª9—GºPï\=î*nΩwòº´?n<QK=”≤ìΩS‡DΩüKΩFΩ1Àí<–Ñ‰; ¬1º.~ªº–˛—ª…ÎNΩ2Çû=º˙?=4∂„<Zá≤º5æ<1ÍKº2!¶<@–RΩe=ïû=Yˇªº˛JΩ˚§∑º©%ì:ÿVp=ÂxÀº|V=1]ıºf∂ËΩØâæaló=e≥çΩˇ"=R—ñΩµ'B=`Áå=,a+æ :æt“=®ó^=lˆæêÿYΩTmÌΩ–~óΩì>¥ºÊΩ‡ô=£,´Ωp≥jΩzÓ˝ª]u≥ºêHEΩ°ô:≠ûëºª|<ƒÍOΩZÈ=ßö)ΩX.‘ºùmΩ1;√;,—Åª î•ª‰∫é<ˆ
-MΩA'º<çÖ<◊Ùª=G@<§MÊªÌïàº`q∫<iË/Ω]ñ◊ΩÂfD=%Â;"Ëºüçº¯XºÉÄ&=Wp”ºÓ:Èª‚ù<bÓ;LΩ1í*Ω]ƒ	Ω NΩsπoΩß+úΩ2Ú8<8€ΩÛ„À∫t¬Ωµ=`=˚Ã\=7]£Ω÷•˛Ω™Õë<]U;«nÙΩÆΩ}qΩÖ{›ºïœ<sçΩjœ =øñ<∫‘g©º(v‰ºÊ:=aÚºzKòºMP§ªä≠Tª Ù<ßxΩ”ıöΩí <ÖNP=0» <–èlΩF1WΩ!°Wº
-¢¥<M›ﬂºò§ª∏jøºÇôæΩ|ÆÈºÌW<:=Dyä;"Suº|ı=w⁄=÷ÄYΩödºSYÛª|4(=ÍktΩ©!Ωˇl™º∆≤µº;jW=<ÂΩÃƒÎ;Ç
->º9îΩóSèΩA˝±=‡Kæº~VÅ=(?ÇΩ›À◊=9éF=h+ˆΩ˜Û¬Ω„b>Rˇ€=€xæøÀÇΩÏΩæˆvΩc¶>FËΩú9À=®~@Ω≥WÌºÈ'‡º¿îUΩzDΩû/Ç<Êªu∂∑<3<øºQí/=£⁄ZºÑ)RºC»	ºœ∞ı<ãûzº¶Æîºƒ)£<†ÈºJ∫ΩªªØ<\Ÿ<H´RΩAÑT< ò≥:1õƒºŸHΩ Æ†ΩæY#=W]='JV=ƒ˜ºñs=Sb8<nõ‡ºêûë=yáY<ôi<ÆO <ÃºíªÎ4Iª≥¬UΩá<JΩäÑûΩMÛ[=à®ªΩÕßΩ<õ«Ω∂w®=dπ0º^ÒoΩgØΩ F¨<ùŒª
-*“ΩÎ∞ßΩ∫!≠ºögìΩN=ó!ΩlÕ˛<D§ΩtËpΩv⁄‘º3ú∆ªÏ'ΩBèÑ;hŸ≥ºﬂ≥
-Ω(ìU=ﬂ—§º…c5Ωˆy<umn=X5Ω÷ﬁQΩh¥ûΩÿ+ÿ∫)´0=7“5Ωﬁÿºãh5ºsœpΩ’ñ™ºN™o<”=¢ùºïç≠º:^Î<Wë2=±fΩAÆΩGª/bÄ=3\tºMSUΩ•†;º%’bΩ	Ae=2ùÉºÜîò;Ñò;“¡‡Ω	mˆΩ8wù=∂⁄'<∑⁄⁄<€]<åﬂ==mÆÆ=îÓΩ≥ÆΩıR™º"V‚=<ñÔΩ¯nLΩ·’	æ¨?àΩÈƒ&>≠ÚΩ¥°=”Ùº£†Òºåt¶ªÒÉΩ9ô":√Ü=twºGò∫ªÖÄªÍÌŸ<*hª<u)Ã<wa≠;ƒ]Ω–ó*<X¶Õ<z8îº±º=Î;Ω7ÿ;£üR=
-ÚæªjÏúº2IÒ<˝àkΩdØ•ºŒäMΩ„∫æ<%â'=æQ<˙ÛÜ<ˇqΩ õ^ΩåS-<˚…’º5–ºÙ8ã<—èÀ;‘(ΩÖÉåΩü <y><Ωê¶Ω⁄Œ)=*£FΩdä	ΩÕ„ÓªQ'â='Ë&=óWﬂº<<rΩª¿Ç<ÓﬁP=i	•ΩZ1ΩÙœ~º]˝éΩ;à±<™©ôΩΩ(=≥äÖΩù^ººdæëºúèp<P®Çºáí<9ûñº√¢Ë∫/∂=9?ªØÜ§ΩJxSΩ‡ˆÖ<¶CP∏>	GΩYñôΩ »àºÅ1=¸Û,:Úã<Ì…><êd∞Ω~vöºõ˜ó<„¥7=˝“®º˘¨ºº∑P=u∏≠<qÛàºjhøΩ0úcºmB=â+Ñªu!#º∏!xΩæ¥eΩhÑe=¶‰d<n¿Gºs:;∏ñΩ´Ωé.=°‡Q=∑≤Pº˝àcª»ÛÂ=´©—=Vq—Ω%å‹Ωm∑ãΩﬂ-˝=˛wΩ´¸-Ω”#æìE[Ωˇo=>∏“Ω¸≥>¿É˛ºÕ€>º?m˜ºË+íΩsçº^Ë¡=a	(Ω^ñﬁ<*Ò;…cêºuõº =¢∏˘º	öÀ;©jªYˆ=K\Ω±XÑªx≠Ωˇ‡H<;@2=$9Ω∏¸ºJŒ=/˜J=Ë5ˆ∫á”4Ω∏ﬂ+=®ΩÕÿZΩGd=Ú…ºäï∫<˚Õº<ä-—ªA€<XÈ«<ÁuÕ<¡Å\º≥aÂ<œ}Ωç¸_Ω/}=∫åΩtΩ∆kÀº(øø=`=>cûΩ-"pΩ™äº˝Ä»<ΩΩ¿ãùºÀ=*Ω¯i®º–µè<‰3Ω—°D=ÖdΩ˜⁄A:qå¶ºf§ ;≤Â'=˝·Æº?;cçÜ=Ÿ$m<}–œºdîºiÁuºÄ¥ºûqqΩ©ı<º∏Q[ΩØPLΩØu›<Ø|Ω;iâ==sÆº-@∫º´ΩoµÕ<≠Àıº4ûΩÿı;ÎØÚ<Ïfì=ÅÁíΩk'jΩ∞
-KΩ€§==∂∞[Ω<£âªïΩﬂ
-üº€®_=wº8=Èbô=°úÿ<iï“ΩôP1Ω‚Õ>Ù7ï=ˆÀºúhAΩ=°(>@À”=ÛΩå:xΩr¬Ÿº,>ƒ°2Ω⁄:Ω:áΩ’b™Ωä">UsÀΩ££=§\ƒ<≥Wº+‡;µÆ¸ªëΩö" >SæººF\⁄<ñ <§á ΩküºQ˛ºˇ∏ªNïŒ<‰C|<€%ºªƒëî9éh=‹Gí<|»>=ë)5<6ˆ§:Gu´<"W<ºËZ=Hé‡<ëáÁ<.ƒ¸<#©C=Pˆºª=Ô∏/¯=◊•ΩLô¢ºKñHºˆ.5=}Ê<î =çtæ<ê|º∑ΩÏ£Ω`Y=F8<¿<‚ºÈµº`fÚ;è∫≈<T"µºÖtÉΩÕ/mΩÆ¢¡=_IΩ{ô&º:«ßΩJíËºçÅ =¸
-*ΩE˙/=~Â+Ω3˜d<¨ü≠<e^=q{≤<ul=Gã=Õ^§=4ù#=7(ÜΩ#ÎåΩ;ùRªπt=K|.;J F<·—{Ω_¸Ω¨À}=•G	=ﬁpPº†å·ºa‰ßΩ}»•Ω+4Ä<_O=(d€<k$=∏†<êdü=ÑÏ1º»›ÿºÃΩ¥∫I=,°Ω2TCΩ3â¬ººd]ò=-ˆ<´8«;ëqºRñÃΩ1n	æØF/>P=óñk:∏º¨ΩŒ¢ù=DS(>é–ΩH®≈Ω{ÎåΩÇÈ=ØµOΩ^v5Ω_êœº„}Ω1s>•¬ÒΩEQ+=|ó∫:S
-ºßy3Ωåoõºﬂ¨ZΩ#p(=≥ÄºàˆÍºû]CΩ”ÙåºŸﬁÅºn_=Iı<π“Ωf˝ï<*
-ﬂ;´u¬º…9¯∫ül<∞˛<π¸Ê;≠!=>†ºhæΩ\'=û$≈ºÄˆAΩ∆>Ω°tΩ.=ŸìΩ–>øºGw#Ω∏ÙÖº”¯Ç;C•/=îèªB8+<WS=ø•<˜°<º¿ØΩr(º≈ä¢=‘<æºÃgΩ©p	<oÄÆ=Ú|=Ò(ΩNk1ºñºô«z<ìH™ºH<≈4ùΩkââΩ‡ÂÁ;Õ*Ωø[U=˚L<ÑT[ΩNÌ≥</Âl=À‡ºﬂh);éÚ:Á+Ü<ÊµÀºD3©Ω≠ºˆJ=üm›<∆¸ôΩ‹ØPΩdßΩaÚjΩF‰=N/ºÌ9+;ÿÄ⁄ºë∫Cª ﬂÄΩ=ç=ß∏K=~˝i<+6=◊§=ê4=Nì…º&ÈÁº%V
-=¨q¿;k0âΩâŸâ∫ß:nΩ504<HÁÖ=vñª<õ<_$.=‰dÉΩ±ÎÂΩx\r=¥ˇ<<èÒÁ<∑Äªpœ‘=7±=â|rΩØî»º5+=I·q=y˜ÈΩç|”Ω><
-æúJ æ=ı¨=!'(ºΩ2Z=	é’<dëÀº„`ºéΩÀ¬9Ω∏º≠‡:TΩ‹P‘;´ΩÄ@≤<hµ=Cz’< ÃºuÅº¬„>ΩáëÂº∏∫Í<ƒdú<mºîÀ∑:[è<ugÊªß⁄À∫wΩ>~¶º»ÎKΩòœ„;ˇı–∫πfSªåIê<w}ºWAÂ∫áΩÖ<0Z}<kâ3=vÃÓ<¡”ïºCD=WœV;≈¯*ΩV@QΩƒΩ‘ä<Ôf=í–$ΩqGH=•˝Ô<á¿=ÂaaΩå)∞Ω÷™Ôº`±<Z»>ΩJ?Ω9	{Ωæ|zΩ5òÀ<ÍÅ#<⁄Y=∂%N=ñ˚îº;+ΩÒÈ¶<íÙÖºy˘∆<Sπo=ã,=F»z=p>Å<Ñ+EΩ[Ω Ωw|ºD6Jºl0ΩZêWΩºqΩ=uN=n4k<Lø<Ì6Ω¿⁄ª)v®:»…t=ö@=sJD<zÏßª ÿD:+˛=≥wè<…©êº^<<∫dí=ßp5ºvsΩ´7≥Ω‘Uìª¥∞Ö<)A9Ωƒß¢<4á<â`ﬁº◊ÕΩ*ÜºÒˇõΩ¥e
-ΩN∏<ûäΩYäˇºaS]º≈ûΩ|) =xîÃºﬁœºıOJΩ∏’aΩ5=Ö⁄&Ωa∂,=.˝Mº≥”AΩ5;Ω‘ûª‡…;;L®W=%◊8ª‘êŒ;Â1`=….œ= ãººg‹O:ìﬂ'Ω∏˙Æ<C&mΩ∫„mºf£ºp≥áº˜á=®¨9=ËŸ…;|é=W$<≥È&=Xe=√ÔÜºë√.Ω¬áΩu»àº∑2=1ª÷ßïº4.¡º´D<Â˜<l=¶Ã7= πPΩ}1⁄<™qE<æòº’-Ç∫
-Ì∫Ωt2ÖΩ†=ò=´X}=['<Ié◊<ú=äá&<h›ª<¿†ΩzÌπªâ,Q=@ßΩïmø;¯Ç∞Ω„-<∞l=§í∫V•Ì<K’<’™XΩkØ4ºÀ£
-=4ë%º‰<=m9\=XËó=û‹∫2Ω⁄ÜΩ§’Z<s=;ÌΩ€cƒ∫í¡Ωz¸CΩ√ÚÙ<QÛ2=∑ë=!06ΩÅqüΩÕ¨=ΩRíJ<ÁØ°=y_¶<r›ªºÖóz=¡L
-:z‹LºËBΩz‡2ΩgÁÒª·i≈ºìªl<’É‘Ω•ÂìΩ\=øLº?˜F=Snë<õ$ª3Ã:=Ω»ΩÚÊ‡ºÂ>ΩAGúºJV_º¡<∑Ìºﬂ∂û<obIΩÛ≤π<}˘∏ºã©√<>yõ<d7=FOΩJ†ºË{?ªü∫N÷´º!:ƒº>ã$Ωâq+=X2&;¶*=‘∫Vº∏Iè<ƒˇè∫Hú‡º+oºùbâºò⁄==›í‡<u%3ºM®R=Gr<”á8=”iƒ<Æìd=ñvì:∏≈Çº,ùGΩıñë;¥/1=‡ç¶<R∞<4±º¢ïÏ< »ª¢ËªÊR=Œ-À<˝2ΩR=¸∫I#∫ >l< 2#<ãßˆ<Feì<éÎÄ;Â¸ΩW	p<ÎR<*aTºÉø(=ò˚;.M=ÌòΩP3<ƒA7º!=7∆©ΩﬂÇ<„9Ω—u¢ΩñÕ•=/w⁄º.ë=éóç<R„ˆºÚ◊πº%…a=¨ Åºz´<}f=ª‰âºGªØÅΩÎYºÙ
-Ä<k'1=‰∂.ΩiûSΩîï'Ωæ¯ÑΩ}àw<•˜ΩÓ4yºÛ&=u(=ìrΩ<	
-gºÈπJΩ2†;µPÑ<v /=”x<¸ÍE;`Öù<ùÍa<@Ü;äçv<:ã=Œ¿<[R	=LF÷ªõxπ<‡yº£ÒFΩæ¢"=£Q3Ω˜ß=	‚˝ªŸ¶;Ω*9=©ﬂªª¿WÚ<ø=ÄKÆºÖi·º?ÿ< ΩF:ΩU=≤√=∑dΩ=©’ºÍı°ºUåî<ø,‘º1·∫0]<;íÒò<I¥ò<U@Õ<[<OΩ¢=P’~º˙K.=ô8=îL<¶õfº¸?"ΩµN=FÇ¢<π_=<¯Í∫C≈OΩ#NÁº∆Ã>='Ä≤<(∏üºâØOΩ®6I<∫‹AΩ!`=|±§∫^=>ÊΩ´.8Ω†¿Åº∏I§:/k!ΩmÊº®´)=\@ΩﬂÓrº¡∂%<ª÷'Ω¶ÂºµΩå <ã≠;ÊM=˚–˛<=N≥j=√ïçºõyG=¿XôºW0Ö=ˇ>ºÀB6ΩœooªJÑmΩ_Qç=Ë}=0≥!=¬œk<Mÿºvy˚ºR8/ºﬁΩX°Öºüù⁄<|yp<“˘‹:|˝<>∫ºR˜A=.ñΩ}∂F=q÷¥<¥.6ΩÓ’%=o◊@Ω…=Í∫4ΩGÍbº”>6Ω0Ù<%ëûª4,tº´É<=ÉﬁZºŸ◊»<në<¨y¿<t÷á:.Ç=ôh<ΩÈ…LΩ<≠÷<ó£1<ä(Cº*J|ª>¨“<PGE<p*™ºnb=\,€º∑ÿo<S·Ãª3+"<´¨ãºZL(ªÌDUºã∆vºxq€<˚÷	<ßß-ΩL@Ωá?ªùºÅ7¡ªèˇ<ŒØ2ΩgE,<Æ
-<◊zöº"=EBº‰+Ωä™ª∂âñºï∆AΩ±lª\ëÄºˇ)<ÿ§JΩπ¿LΩä†<√oΩ6;UÃ<“;˚t!=óù€<ü<<v√Q<©Ù5=%ä”<ÎÄ<6}Øº*Ù>ΩO(+ºµa¥ªÿ»Ω˚ Ωº™®ºsÛ<˙ë˛º„Q◊º˝>œº<’ ΩÕ|CΩÜ(œºÄPö<È<œºã%<^Ê3ΩÊ'ÂºÉ¥Ωºt›ΩÆ≤-=Ω?≈ºΩΩJÿÁπfyó<öR&Ωê˛¿ºùAmº©7Ó<‰õ><√∫ =Ú∫êºuJª}u5Ω*ñ’<ˇÕ·ºdÛOΩ˙kpºw∆^<wº˝∂3Ωp˚ó<EŸº‡É}ºX:Ö<ü<˝ø©º÷_∆<‘k⁄º˚¥ÎºØµìªb)Ω‚§<1÷º[ ⁄ºo^ÿº¶ÿˆ<´‰=∆3=nı∫	q(=£xæ<õÕ <–A=Õºπ◊Ω‰e(=¶ˆ<Yn‰:.íΩ∂EË<rC=Öó„ºlh4=Eˇ†º>°<0[?º‚<:∫Ò§äº7JΩ7ú^ºÜ`ºÚﬂºu5[;ûqúºæA/=∑c7=°pº 	ºŸwªóŒ<m8¥;¯≠ãº∏ﬂ∆9¢=/=g≈Jª æ;T
-R;“=ûÛÆº@Òˆ<≤-®ºÅÖΩ˘ΩÛ%=oá•<Ü∑⁄ºW1˝πu-ΩÓ∏-Ωz¿âºΩ%›;~«D=2Ê<Ö∆πu7´<I	=}—ˇºN¬Zº.ƒªƒÔÔº˝å7<V—∂º®√<ñi1=È…&<ÔéØº∏ÆïºJùª¥=tï‡ª∂÷ò<%¥9=Ÿ&Ωd*=Çw =|=Íf–º◊ô=∂àsº&•=;#<›∂<ûÃ?Ωá‹G<E+)<Zô<¶„DΩ≤NΩ<∂∂@=≈Gâ<®=«{j;æ~<<π∏º2Ωg≠Uºw_d9[%Ω+£Óºä=ãª	ì=ø”†;*‹Ãºà!I<èæÏ<Y£Îº‡O<§ÖΩùÀ=Òàª¬É:¶h< èÙ<r8>ΩI¨<XÀ2=Hö<Ω™Ú’<Ω8(ΩBAÄª§]‹<ÙºŒ∏4=°\ΩfÁº∑i=–‹ª~N<¸Ío<áEGΩ	˜¿;Ω€Øº?∫º( Ω¥âªï|<Íº"1=—`:ΩÉº‡ÑH=ç"*ªˇÿµº≥|	=µHËº"ßäº«∫Ω)KΩ,=ëL=˘,=tˇŸºN;Ω“(Ωd±“;ﬂ°‰;Î«O=[™¥º,«‡ºU6;rIºg®„ºaD<.[Ùº€z–ºã
-=$ˇ	<ÔΩ5ÎΩ‹ËZ<›ŸºœƒÃ<¶-ºDæ2<∂PºπS?=ñFrº∑
-◊ªowMΩ.'ΩZCΩ∞é=¢‚<≤â„<·∑ï<€§ºä?WºeÇ†<Tqd<ÀÊrº-~=ΩEΩ™eı<f?ΩÀ»˝º˜]°∫îF ºn,Ôºÿé”º'µû<®MBΩ´∂GΩ∫=Fº.Éy<!pÑ;ÿ`ˆºc⁄<∞)≈<¡≈;ﬁ[$ΩçÛÕºÃ%¿ºûåÙ<ƒ›¥ºœ<%ﬁ–;◊ƒ¡<ô˝ò<NÈÈ;ó´ΩÀ±=íÌå;î%Ω?≥µ;Â	=≈x/Ω≈n§;≤L˙<ôL<-:Ω(ê:=b=q‡ª.@ºb =±&5Ω·¬FΩ°	û<[?º‡RC=πΩhì2Ωp|ªK©<ÕñÄºôk%Ω_aéº—)<;^Úü<õˇÙºıºY##8ÊÏMΩÎ°e<©üÈ<˝˚=h2Y<É‚:Ωl¥®<k˘ûº9=/ê%Ω2Yj<,FΩ<∞™Ù<Ω(?=A(Åºa~=Ç¡< .=Ï=6Í@=˝4<P¨˛º`∑Â;˝'";Bª¶q&=Æ– Ω™É=“Æ∞< ﬂ<Pø‹<"¨∞∫r≤H=h!J=ü	 ΩÃ5º⁄ΩΩÊ5‹º?ü“<0?<‘˜⁄ºL~
-º∞]ΩΩËp<æÎYº‹M$=+}í;äK∂ºÀ»3Ωè´H=ÏpΩúΩ<¬X<¸¯G=÷{ƒ;”Âªß-7=0q€ºt√#ºß)=%X:±<π69 ºΩ’¥<yt˙:?ˇ=ÕΩOç<vHJºD[E;%mG<Æ#/=$m@=—A4ΩàÄB=lè}<ñk∂:ÆbÔºw<+<ìñÔºõ;Ω◊|xªõÈ==¯==∑¿<#ôÀ<∑’O=sû6=kÒ<xõ<s%∏ºG√¥º≈hŒ<ÚÎ3=Ôäe<±NÚ;/YΩ|Ì<W=YX"Ω$!¶ªTÙ6Ω€∆/ΩcCΩP‰ÕºÌE˛º„Uè;í Ω- ¸º¿ó<£ù∫¢Æ=3ùZº‰·&;˙_-=~ˇ+Ω9lM=ƒÇºRRoª|@4=ﬁ‹ß<h1@ΩV∏=‹Ω#î4<Ì∫9<S)=q%ΩÖ∂º…ÁÄºŒHæº´∏[º¯Æºb(ô∫‡IΩÍ´JΩ</hªNIÅªü<iø=f§Ωo\°º¡?=%Ω˚#=Êˆ=È%PΩÿMC<ÄT£<ÓCOΩßDΩ’ˆœº©u…<*˚ÿ<`Ë:=Yéº∆ò6Ω•G—º6ÿ=™8,;øÉ)ºFÀ@=fÜÕªçΩ5")ΩÄ§=Oê∏º)9Ω@/ËºOG;	ﬂª<=Ö≥;©ÊÓºçJ=∑‹3=a©J=∏‘Jº˛q<Å <æP¶ºtÎÛºa∞ªº˛;◊Çã<&V=27©8y‘EΩ‰Òõ;
-=áƒ€<8EΩÙ,ΩØŸº4sû<ÀÄD=[ÑÀºÕ«1ΩÖΩnÒΩ¡Ω=¿;EΩû∑á;zè°</4±º¿q/Ω–-ΩÑT=#˚ Ωo\=óÿu<d=£Åí<r∏÷ºûÈº\î—<N\=å-˘<◊9Ü;YM<ÎªJΩ™Å'º±»ºÚS(<ÅΩçª∫1Ωb"=Ωq˘/=È™f<◊´4=ÍÚzºMa)=ÃF=Fyﬂ;ä
-ºGYºä°äº”/Ω¯u=w˛Ä<›˘<Ü#7Ω}f?Ω{ﬂOΩäÈÆºøJ:∫µΩ¥
-%ΩÙ»∞<uΩ©˝L=_H<nõ=ÙÚŸ:/”6Ωz#∑<uÇW<+¢6<›6ΩáÍΩÕµºﬂîÑ:˜™ºKñNºÊœÇ∫≠wπºtmF< ıMΩYıÎ<Àx®<¸Ω=j/ΩcÅªõxΩ˘x^ª{)ºÜÜë<0m˘ª˚OΩ0ºàßº°L=Ÿ)=ËZâªπœDªªﬂgº⁄¬º
-/f;T˚ ΩÕC <Èvÿº4ƒ,ºXv)<-ªR:Œ  ;›G¨ºJ,ë∏ËπLΩıÜŸª≠[\º∏◊-<f¿ñ<ˆ∞J=Gi≠;ò=vÉº5K.<È¨é<º,]ºÅäR<ôODΩ∆ÖVº@Ø=!›”<µ]Ä<^Lﬁ<µª±√
-=êÀ=Ï(<=Qå,Ωô7Ωz≈ Ω6$»;1∏wºn?ΩÂÍûªJóTªóÒº¢c0Ω?˝Yªÿéàº¨öªël7=πñ =ıõ*Ω˝¬=oZ>Ω78~<6nó;d?Î<;Î=ÃË'Ωê»&Ωn˝ºò≤ªå∆ùº£–:T>6=`íµªÊA—<9
-9=†ìÒºÏkS<"Ñ“π<W=	∞ù;.Ñﬂª<	'=ÔºOΩπF!=ΩáIÁºπ‘ºÕ=vΩ±⁄Ω1”Ùºj¿<Ö<<ÌEºüË1=‚æ¢º˙Ø=˛‘-º”÷2=w<Ì;9?ΩÏt∆ºfÖï<ŒfòºÄπîºo‚õº=KΩÇXÆªœzˆ;!“xºGÄ
-=¬pÄºñ:Õ<VÄ}<öù\º (‹ºŸ“RºhlA=5¨<‘ªEΩ6Ä°ª”5Ω∫=æa‹;RØ¶ºµ,ˆº'⁄/=æïˆº5=§'<^¬ıª∞=≈mª<Â*Ω≈Â:=[”HΩ¢+ê:ƒ‘L=≈±}∫ºõ7Ω t-=∆QÀºÖÃ=ˆÏΩ[>=®≠<±º@›=≠#ΩœÌNΩGEáº†Âº0òºó<õ€sª—?=)ö<àﬁ@=ª(=S=∞I∑ºÙ,$Ω.Ω≤<º !=ëãÚº@6*ºÛRY<∏A<ΩxLå:s˝ºÜ-È<—ñ‡<≈≈C=˙„'96=÷÷…;jÿË<=Íº¬¬§<¯˚°<\‰=µ¬º]?Ω¿2ªûùº¶û€∫zΩc“GΩˆ<5ΩAˇÍº(<N={5Ω≠Ω·ºØñ√º‡,‡ª¡∏Ω#T´<XŒÔ<U*ªo
-3=ÿnÉ<Ùÿ=ª≥¶<sÂ=X.<ÍÖ=†gEΩ í$=∆7'Ω{ÙOΩ—Eì<:bÓª´3=ŒQ}º${=≤I+=§' =Y5ëºìË‰<2œHº*∂«<©÷DΩ˝?ª:ªq;<ˇ√º∏Á.=®5ª˚vó<fDEΩü±dªÊ˛;Œ¡=öh√º/±Gºñ=ŸIf<∏Ë=¬ëº•H=Édè;Ù˚º…Ñ>=ﬁ°©<ò«=»çP=≤hö<àÎï<∞NK=—øºG_'Ω¢Oö<|Ωõ<∆˘4Ω”q=-ÌQ;T	= i?Ωà+;Ω≈§Ω]µ<‚%Ω9Æx<%«*=Îdúª£˙Ÿ<Œ4ΩØl†º"è§ºÑ¬èº,é”<°ãòºı<Ω_EΩ8‚Ö<"µ=∏.DΩ‘ÆÓ;n¡<ø==≤ë—º\Î/<{åΩ0ÿº8MΩ˜O;ùJK=[§<’Í<Î=^ß<o9;#œ≤<>äΩDN6=g H=˙x<übB=t∑º <Ωfñº◊K¡;ƒΩÙU@Ωè%Ω·H3=Ó∫;"Ñ¢:LB≤<r∑<Ω]5ƒºb◊0=I˜º¯Ì2;7
-Ω{D=ÿ;ΩQ∆ºFÀ,Ωhô==MTΩ>0˜ªW :≈ë=‰=˜eπªvºÓ<pΩ«§v<AÅ=}"B=£1Ωu«=˙y<Ωû@ΩÏº%|ºHå,=TÎ§ª≠Ô‡</"»<hUΩjÉº≥ÀºK=ü‡˙;ıÚº|—Ãº2’ºÑΩ%#Ω≠Æª íí<g!<ÎÖ	ªû¬;_3"Ω`j!= ¨Ω|)!=‡/Å<ªŸ3=Æxºµ#ç<»Æ»ª≤f"=€„*=g“1<d'=[âÑº’oºù&;=≤’Ω„ˆ&=& [ª«¢Ü;)’4Ω'Õ<÷˚¿<Óﬂ5=€wΩ´z$Ω7¡;·Ûº©˚™ªyäI=ªÊºpΩ˜÷ºß”&Ω⁄^ºHå:=`FE=W§Ò<°§=FT¡º'Ω⁄º†<	[º<ü¿À<Gì£<ügººX;È∏ΩD	Ωq\Ò<,WÄ<∂ªº/˝<X?ªJ*ºÉ‰!Ω{:N<µ±ºF“Òºı¯Ω Â>ΩNµ§;Í£ºΩM=∑«-;˘=ı>ºy'<Røªø=Ô<˘ê˜;ÜÁ<YúΩOX≈πôé:j„GΩf[;‚Æ	Ω v>Ωé"ªãhéº HΩ¿è≤<$]óºﬁ?ˇº˚¥¡<àœ@Ω¢aÌ<†Ω€ŒÔºË›Âª"úCΩt∆ßº<è5Ω†^∫ºi-<û¶ª^a<°œ<M¢	=c%Ë<“˜úºõ‹<ı¯C;≥ìº∫tÅºN÷Íº ÅªÓÓ¿πjsäªy
-ΩIÉ`ºV6Fº.@Ω®–ªsp&Ω)jÚº∂˝Ωàî=t¿ª_∏=ÌÕóªè„©;/=R”2ΩH˛ﬂºF⁄=N®zºMÿ0='RÍ<|Ë√º¢¨C=aº<ø§ƒº<ƒH=ﬂA<õ*<˙ˆ#=>H=˘µ«:≥<1=ÈÊ;Ω™ù$ΩY<3ñN=’Œ=ÿß˙;>ü=2Ω?∫ﬁ<Y]?ΩÅ#7=ú^√º6Ω:*†ºù;Ω'-â< Â=SΩj	∫¬D=lCòºƒÅO=¶∫àË–<«œ+ΩÚ£Ωÿ4∆º∑Ù<∫Yºò!Ω{?Yºù´=∆˚:=∫
-º≈\O=Û$<[§a<ê<úVª–ΩêúN<Ë¢=rJ°<Óí6<ˆ-ΩôΩ¸Ç<¢˘Xºe/3Ω|â ΩçHΩ∂8ı:˛àPΩYœHΩ\IÛºÄ7*<‡ıFΩ˚˜<6j—ºLO>=e¨ºVı¢º¸IJΩoAΩƒ$Ä∫π;%ΩúºVK¬<LË∏pÀïº—%=…Òº»Ï(Ωs(è<˚cuºÊ+<◊¸HΩeÊL=Îjt;ØÊhºOå-=$«·;`≥ç<ñ‡ÿ<€ˇK<!˚r<Ãò‚<øGΩ‹»<˝,¬<≤° ΩÆ‚ƒºÛä=∑·<é±Ω7o˘<—yB=#Ä%=5©Ñ<t∫≠ºi”Ì<8r¥:£Å<mì<=BÚ<brº$Ωïº°Å⁄º£≈ˇ;2W=w⁄ñªOÚ>Ωn-[<â,3Ω€≈d<Cë◊;tTŸºœa:=-?”ªr«<Õ7,ΩI	’<ñ¬Ú:˙µw<‹#ç<Í¿ß9O$*<Ü|*=û3ΩGZ.=ú=d?á∏îA!=
-øïºÈﬂ<´†ó;–≤¯;5M1=Ò=ë˘´;ó4Ω=#Ω'˛ÂºíΩø^¡º!¨€<5íÇºƒ"	<S+=,#¥;`|>=]í∑ªk˛Ωnô"=°Lk;¡Ω
-0Ò<Ú¢=N7=3‰®<mß#Ω~Ê>=o;@ôN;¿Ùäº›ΩO=Øºæ{;ıå=ØÕöº∆h:7a<Ò]Çº¯ãΩ˙¶6Ω–%	=Ü∞‰ºTt„º¨ΩÒKôºÚì<Z=◊:=´ü<¥–à<VB˜º0¡÷ºº¶DΩ£:=ˇnΩtæAΩ¥ 6=ÁãôºÌÔΩ+Q¿ºÂ∂^<¿ˇG=Á0ΩhÒK=º"ƒ<•¢¶<p?3=±~Vºµ8R:1$Ω≥uÄº⁄ôà<‚ÁOª0‰%;§nº™B=Ìºõ∆ºñ‘H=ü(Aºe‹ º‹H*=KE:ºÁ+=ÂÙ)=∫Z°º“F¢º>ò<´æ=ΩáÈ<æ1ö<HÄµ;R≤7=oÊÄº∫*9Ωb_=F^◊º√é3ΩP˝Åº)‰HΩ‰”Æ<ùûKΩﬂù·ºR[M=Q93Ω9¶`<cqãºÂ¬4ºê<'ΩQ∑‰<CU>Ωuù=\◊ˆπ8¯=<wç‘<5•A<?™§º±ˆ0ΩZª<z}⁄ª◊V∑9,•√ªÊÆQ:æqFΩª®9<Ö˙ı<œÑ=ïfP<Ω2=u÷‰º‰∏ºí
-Áºk4=öóCΩLöÈ<_˘Ø<–’=g:-Ωñ,H=ÚÌJ=Í 6Ωë ¥<‰0Úº}2=˙-Ω˚!<º≠ˆºssΩ«‹ªIªo<îÊ2=Kü=JÕ<:¡E= äø:ÔΩ6“ΩÒIÓº◊MΩ'ÕBΩ˜V1=8¨:=êB5ª€á∆:e†d;÷óN=º¯ªº∫ºS¡F=´sªªéËº!?)ΩŸr§<ì◊<…1Â<”–*ºŸ∆X<>H<Ÿæ	º√˘°;>œΩÉ61Ω≈∂º£R∂ºØåˇºf(ßºØ~‘<XeHºôÜH=`kº˝√>= ,8<¡ù'=;ï:<X›Sº:êí<eç'="MÉº1∫;≥∞A<≈:
-w=T
-Ω‡‡z<3£-<Œ8ΩÁ‘0∫9Å7=Vu=˛GÎª€E^ºÛﬂ<˜è¶<Í;Á[=UiI=ÿ!ΩÅ’9<ßùÂ<?˙¸<ÁcºÆÈ.ΩFΩOËΩ˝Ó2<(ƒÆ<¢çG=ü9+Ω·L<àª…<„Ω<Ç∂!=Í=D<√?N=ı`Ω≈b7Ω∆ï<•xEºCõº<Ò?Ω_£Ω(3Ω:p@==K8∏<Ê‰ <™©<{Xñº±H=iÇ;=ŒÍEºÖ%Ω◊d(=;Ë€<1ª ΩJΩ†lä<È:‰<›^;µ£AΩÃY<º“ﬁI=\|MΩ-ßŒº“*6=»∞6=íu´º”±¥ªEÂ˝<pA+=7ÕÒ<Ã ΩØ'dºxù<´®ó<a©¸<˜5ºm¿=Úa=a–=Ñ1ù<NÈWº°Vª"»¢<iíΩSÍi∫Aˆ<˝+$Ω~b=Q„„;ê_–ºçºí*ıºæ=ú®=<;ΩÁ:ΩVNºLsª<Ö¨ªÇ¬CΩ–Ò;·úÿ∫ø;MµÓ<bf∑ªg¥ΩQ*-=ÏıçªÚ≤√<˛Æ=Pù’º•L7:ÿá ;ìª∂(îª D=qùWºØè&<ÔÕ<è7H=+Ù<Â ¡ºE/óªE¿J=©LFΩ,c=Ä„Ω<£?=&Ø<1,(ºHÕs<Ç∫	ΩGrî<˝‰Gº6©´ºWú<	ê€<Ω0º6™8Ω„ÇΩ5…<íıﬁ<V=îÀf<íºº;</=P|0=MÚA=qâº˝∫¨º±ºY,u;`Åæ©jì;‹¢íº—AÙ:îl≠Ωª9óΩÅFÂºÂ…ºjºU)¨º&*=¸Ú©=í≤≤<^e'>y™ÜΩÉÛZ> z7*∫
-Bonnx::MatMul_22J†¬˚j>bˇ[æöÉÑ=fxëæ_MvΩ¶˙3>ı¬>à*>R°]ΩÔçæ†tºZÇûºR∂˚ΩÑ´(;#›=éˇºQm™>„˚ô>º2„ΩËQæN†1ætDõ>>ò5ı=÷ÂÀ>Øúí>d@¿æ“~æK˛Mæû>°Êd<mk{><êÜ=Ÿa>”ñT>4Ê>ìÉ>§¿*>ŸtÖΩä∏d<ã&·>ëèÁæú∞Mæƒ◊©æ£À¥æá~>LôÂ>èØÇ>Ï,˜>Ô ΩÆ˙£=∑:ùæ jææ'[ÅæÚÇèæìqæz€5>1aµ>–E·=©•Tæ7XòΩPc√>CÉ¬>z8Ñ>œvñ>æôá>êëVæ·∑⁄ΩQNI>ã]ö=Ë3æ«M¯=‹Fô>@>Î]Æ>∑hù>∂¥ÕªP·úΩï#æt>N< >*Éæ¸4–ΩV™= ßå<{A=Uk>‘l°>Ú=º=ñˆ4>JÎ∂ªÆ7DæÜ;æÑó€Ωö„tæÖ∑c=ùåÃ>çáŸ>cñ>ª§∆=ÜØë;ñæµ.mΩm‘èæ≠©æﬁ©¬æâz>O‡ç>œmæﬂt!æî’˘=«ª>.ú>ê+>h±>l≤Ù>u5<æ>ﬂΩ4µ<™∆=äM<÷{ÑæKúæ4}.<wYNæ‰Lè>Ÿ∏â>€O>ﬂ)∑Ω¢I¿º≠·ñ=ﬂ∂æÆ^∫Ωı¯KæKÊVæTTæ.-Ö>é5T>‡ææôÈ«æ}ÁV>∞≠Ñæ 76æ∞æ¬ÕæiHæ|ã“>%i >	òß=‰è™æåz=MÄßΩä:æΩ≠≥æ®9¢æŒnù<<Í >ˆ’—=óä>XÀΩ%‚úæØ?áó>Ÿaé>pÕÈ>Hf®>ŒåÎæí;õæ€oü>æüP=”ââª)7oæ÷®æÛ⁄°æ7 eæ∫Ω•ºˇÑç>¡\>xÙ›=RN‚=√p>ëêÑ>s˝ç>^M’>Íêù>@Ê?Ï8yæE Bæ¿=$=f¸ÂΩ◊Tç=˚ªáæ•iØæM¡æYwàæ?¿á=O“∏=˙À->ƒ˙ª>°§.º*‚
-Bonnx::MatMul_23J»õ§ò>;…y=ù6èæeB°>ˆ
-ßæ˝|)ø«UæGS?æó=¸®(?⁄pø`ºæéÏ>Eπ+ºá>4Êæ< æ˚ÅÁ>m∏µæM‡-?∫Iíæ≤˛^=Nä?Ï-⁄æÖ¡>ÆK∂>ı¨ùΩ∂à¿>¢Oø_±f>sN?^¬!?.3¿æ^¥~>‘uLæ5À
-?œEù>4-7æ-‚“>G‘ΩmO‡>v1÷>’ÜÖæo¢ä>2s<6P%ø¯ø ·>zjæ⁄<!?*-Bonnx::MatMul_24JÏß'?ÇΩ	? öEø´v¶øX>ÿæZ
-Input
-	
-
-Åb!
-Position assessment
-
-
-B
