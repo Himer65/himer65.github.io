@@ -13,4 +13,4 @@ const boll_animation = function () {
     bollX += speedX; bollY += speedY;
     boll.style = `top: ${bollX}px; left: ${bollY}px`;
 };
-setInterval(boll_animation, 15);
+setInterval(boll_animation, 15)
