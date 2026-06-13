@@ -1,16 +1,24 @@
 // neuron widget
-let boll = document.querySelector("#neuron").querySelector(".boll");
-let bollX = Math.floor(Math.random() *  30); let speedX = Math.random() * 4 - 2;
-let bollY = Math.floor(Math.random() * 280); let speedY = Math.random() * 4 - 2;
+let boll = document.querySelector(".boll");
+
+const winH = window.innerHeight - 30
+const winW = window.innerWidth - 30
+
+let bollX = Math.floor(30);
+let speedX = Math.random() * 4 - 2;
+
+let bollY = Math.floor(30);
+let speedY = Math.random() * 4 - 2;
 
 
 const boll_animation = function () {
-    if (bollX <= 0 || bollX >= 30 ||
-        bollY <= 0 || bollY >= 280) {
-        speedX = (Math.random() * 4 - 2 - speedX * 1e-1) / 2;
-        speedY = (Math.random() * 4 - 2 - speedY * 1e-1) / 2;
+    if ((bollX >= winH)||(bollX <= 0)) {
+        speedX = -speedX
+    } else if ((bollY >= winW)||(bollY <= 0)) {
+        speedY = -speedY
     }
+
     bollX += speedX; bollY += speedY;
     boll.style = `top: ${bollX}px; left: ${bollY}px`;
 };
-setInterval(boll_animation, 15)
+setInterval(boll_animation, 15);
