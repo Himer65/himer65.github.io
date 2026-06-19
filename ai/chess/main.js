@@ -1,9 +1,11 @@
 function main(){
-    ctx.fillStyle = "rgb(200,0,0)";
-    ctx.fillRect(0, 0, 400, 400);
+    ctx.drawImage(board, 0, 0);
 }
 
 
 const canvas = document.getElementById("canvas");
-const ctx = canvas.getContext("2d");          
+const ctx = canvas.getContext("2d");
+const board = new Image();
+board.src = "./image/board.png";
+
 window.setInterval(main, 30);
