@@ -4,31 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Himer65</title>
-    
-    <!-- Подключение шрифта Rubik -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+    <link rel="icon" href="./resume/image/himer.png">
 
-    <!-- Подключение своих стилей -->
-    <link rel="stylesheet" href="home.css">
+    <!-- Подключение Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        .widget{
+            background-color: rgb(124, 192, 209);
+            user-select: none;
+            width: 300px;
+            height: 50px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        #resume{
+            margin-top: 20vh;
+        }
+        a{
+            color: black;
+        }
+        a:hover{
+            color: #5c5c5c;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="boll"></div>
+    <div class="container">
+    <div class="row justify-content-center">
 
-    <a href="resume/index.html"><div class="widget" id="neuron">
-        <h4>Резюме</h4>
-    </div></a> 
+        <div class="col-sm-11 col-md-4 col-lg-3 d-flex align-items-center justify-content-center widget" id="resume">
+            <a href="./resume/index.html"><h4>Резюме</h4></a>
+        </div>
 
-    <a href="ai/index.html"><div class="widget">
-        <h4>Нейронные сети</h4>
-    </div></a>
-
-    <a href="services/index.html"><div class="widget">
-        <h4>Услуги</h4>
-    </div></a>
-
-    <script src="animation.js"></script>
+        <div class="w-100 d-none d-md-block"></div>
+        
+        <div class="col-sm-11 col-md-4 col-lg-3 d-flex align-items-center justify-content-center widget" id="ai">
+            <a href="./ai/index.html"><h4>Нейронные сети</h4></a>
+        </div>
+        
+        <div class="w-100 d-none d-md-block"></div>
+        
+        <div class="col-sm-11 col-md-4 col-lg-3 d-flex align-items-center justify-content-center widget" id="services">
+            <a href="./services/index.html"><h4>Услуги</h4></a>
+        </div>
+        
+    </div>
+    </div>
 </body>
 </html>
