@@ -6,23 +6,46 @@
     <title>Himer65</title>
     <link rel="icon" href="../../resume/image/himer.png">
 
+    <!-- Подключение chessboard.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css">
+
     <style>
-        #win{
+        #conteiner{
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
+            width: 400px;
+        }
+
+        #startButton{
+            background-color: rgb(54, 118, 255);
+            margin-top: 10px;
+            padding: 5px;
+            border-radius: 10px;
         }
     </style>
 </head>
 
 <body>
-    <div id="win">
-        <h1>ИИ</h1>
-        <canvas id="canvas" width="400px" height="400px">Ваш браузер не поддерживает Canvas</canvas>
-        <h1>Вы</h1>
+    <div id="conteiner">
+        <h3>PlanktonAI</h3>
+        <div id="board"></div>
+        <button id="startButton">
+            <h3 style="margin: 0;">Заново</h3>
+        </button>
     </div>
+
+    <!-- Подключение jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@4.0.0/dist/jquery.min.js"></script>
+
+    <!-- Подключение chessboard.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
+
+    <!-- Подключение chess.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chess.js@0.12.1/chess.min.js"></script>
+
     <script src="./main.js"></script>
 </body>
 </html>
