@@ -3,49 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Himer65</title>
+    <title>PlanktonAI — шахматы</title>
     <link rel="icon" href="../../resume/image/himer.png">
-
-    <!-- Подключение chessboard.js -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css">
-
     <style>
-        #conteiner{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            width: 400px;
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            padding: 24px 12px;
+            background: #f4f6f8;
+            color: #20252b;
+            font-family: Arial, sans-serif;
         }
-
-        #startButton{
-            background-color: rgb(54, 118, 255);
-            margin-top: 10px;
-            padding: 5px;
-            border-radius: 10px;
+        #container { width: min(92vw, 440px); text-align: center; }
+        #board { width: 100%; margin: 16px auto; }
+        #status { min-height: 2.8em; margin: 12px 0; color: #39434e; }
+        #startButton {
+            border: 0; border-radius: 9px; padding: 10px 20px;
+            background: #3676ff; color: white; font-size: 16px; cursor: pointer;
         }
+        #startButton:disabled { opacity: .6; cursor: wait; }
+        .hint { color: #697586; font-size: 13px; line-height: 1.4; }
     </style>
 </head>
-
 <body>
-    <div id="conteiner">
-        <h3>PlanktonAI</h3>
-        <div id="board"></div>
-        <button id="startButton">
-            <h3 style="margin: 0;">Заново</h3>
-        </button>
-    </div>
+    <main id="container">
+        <h2>PlanktonAI</h2>
+        <div id="status" role="status" aria-live="polite">Загрузка нейросети…</div>
+        <div id="board" aria-label="Шахматная доска"></div>
+        <button id="startButton" type="button" disabled>Заново</button>
+        <p class="hint">Вы играете белыми. Ходы PlanktonAI вычисляются в браузере.</p>
+    </main>
 
-    <!-- Подключение jQuery -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@4.0.0/dist/jquery.min.js"></script>
-
-    <!-- Подключение chessboard.js -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
-
-    <!-- Подключение chess.js -->
     <script src="https://cdn.jsdelivr.net/npm/chess.js@0.12.1/chess.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@latest/dist/ort.min.js"></script>
     <script src="./main.js"></script>
 </body>
 </html>
