@@ -13,7 +13,6 @@ const game = new Chess();
 let board = null;
 let session = null;
 let aiBusy = false;
-let gameStarted = false;
 
 function setStatus(message) {
     statusNode.textContent = message;
@@ -87,7 +86,6 @@ async function playAI() {
     if (!session || aiBusy || game.game_over() || game.turn() !== "b") return;
     aiBusy = true;
     restartButton.disabled = true;
-    board.draggable = false;
     setStatus("PlanktonAI думает…");
 
     try {
@@ -107,7 +105,6 @@ async function playAI() {
     } finally {
         aiBusy = false;
         restartButton.disabled = false;
-        board.draggable = true;
     }
 }
 
@@ -124,7 +121,7 @@ function updateGameStatus() {
 }
 
 function onDragStart(source, piece) {
-    if (aiBusy || game.game_over() || game.turn() !== "w" || piece.search(/^w/) !== 0) {
+    if (!session || aiBusy || game.game_over() || game.turn() !== "w" || piece.search(/^w/) !== 0) {
         return false;
     }
 }
@@ -172,7 +169,6 @@ async function initialize() {
             executionProviders: ["wasm"]
         });
         restartButton.disabled = false;
-        gameStarted = true;
         updateGameStatus();
     } catch (error) {
         console.error("Could not load PlanktonAI model:", error);
